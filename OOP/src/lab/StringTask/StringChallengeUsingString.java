@@ -1,9 +1,9 @@
-package lab;
+package lab.StringTask;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class StringChallenge {
+public class StringChallengeUsingString {
 
 
   public static void main(String[] args) {

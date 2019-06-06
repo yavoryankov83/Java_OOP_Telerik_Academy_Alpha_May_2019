@@ -32,13 +32,9 @@ public class Person {
   }
 
   public void addInterests(String... interests) {
-    List<String> result = new ArrayList<>();
-
     for (String interest : interests) {
-      result.add(interest);
+      this.interests.add(interest);
     }
-
-    this.interests = result;
   }
 
   public void showInterests() {
@@ -52,13 +48,9 @@ public class Person {
   }
 
   public void addFriends(Person... people) {
-    List<Person> result = new ArrayList<>();
-
     for (Person person : people) {
-      result.add(person);
+      friends.add(person);
     }
-
-    this.friends = result;
   }
 
   public void showFriends() {
