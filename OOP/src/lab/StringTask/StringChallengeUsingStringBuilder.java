@@ -8,10 +8,13 @@ public class StringChallengeUsingStringBuilder {
   public static void main(String[] args) {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+    long startTime, endTime;
+
     //read input
     StringBuilder builder = new StringBuilder("git is a <<version control>> system for tracking changes " +
             "in <<computer files>> and coordinating workon those files among multiple people");
 
+    startTime = System.nanoTime();
     for (int i = 0; i < builder.length(); i++) {
       //get start index of "<<"
       int startIndex = builder.indexOf("<<");
@@ -32,7 +35,8 @@ public class StringChallengeUsingStringBuilder {
 
       break;
     }
-
+    endTime = System.nanoTime() - startTime;
+    System.out.println(endTime);
     System.out.println(builder);
   }
 }

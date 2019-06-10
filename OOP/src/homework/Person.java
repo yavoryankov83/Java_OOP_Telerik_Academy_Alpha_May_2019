@@ -1,6 +1,8 @@
 package homework;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Person {
@@ -8,33 +10,40 @@ public class Person {
   private String name;
   private int age;
   private String phone;
+
   private List<String> interests;
   private List<Person> friends;
 
-  public Person(String name, int age, String phone) {
+  public Person(String name, int age, String phone, String... interests) {
+    setName(name);
+    setAge(age);
+    setPhone(phone);
+
+    this.interests = new ArrayList<>(Arrays.asList(interests));
+    friends = new ArrayList<>();
+  }
+
+  private void setName(String name) {
     this.name = name;
+  }
+
+  private void setAge(int age) {
     this.age = age;
+  }
+
+  private void setPhone(String phone) {
     this.phone = phone;
-    this.interests = new ArrayList<>();
-    this.friends = new ArrayList<>();
   }
 
-  private String getName() {
-    return name;
+  //always return a new collection of the field or Collections.unmodifiableList(interests),
+  // so no one can modify it from outside
+  public List<String> getInterests() {
+    //return new ArrayList<>(interests);
+    return Collections.unmodifiableList(interests);
   }
 
-  public void introducePerson() {
-    System.out.printf("Hey, I am %s and I am %d years old :)\n", name, age);
-  }
-
-  public void sharePhone() {
-    System.out.printf("You can contact me at %s\n", phone);
-  }
-
-  public void addInterests(String... interests) {
-    for (String interest : interests) {
-      this.interests.add(interest);
-    }
+  public void addInterests(String interest){
+    interests.add(interest);
   }
 
   public void showInterests() {
@@ -47,9 +56,13 @@ public class Person {
     System.out.println();
   }
 
-  public void addFriends(Person... people) {
-    for (Person person : people) {
-      friends.add(person);
+  public List<Person> getFriends() {
+    return Collections.unmodifiableList(friends);
+  }
+
+  public void addFriends(Person... person){
+    for (Person p : person) {
+      friends.add(p);
     }
   }
 
@@ -63,8 +76,16 @@ public class Person {
     System.out.println();
   }
 
+  public void introducePerson() {
+    System.out.printf("Hey, I am %s and I am %d years old :)%n", name, age);
+  }
+
+  public void sharePhone() {
+    System.out.printf("You can contact me at %s%n", phone);
+  }
+
   @Override
   public String toString() {
-    return getName();
+    return name;
   }
 }

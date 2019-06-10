@@ -9,10 +9,13 @@ public class StringChallengeUsingString {
   public static void main(String[] args) {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+    long startTime, endTime;
+
     //read input
     String input = "git is a <<version control>> system for tracking changes " +
             "in <<computer files>> and coordinating workon those files among multiple people";
 
+    startTime = System.nanoTime();
     //iterate over input
     for (int i = 0; i < input.length(); i++) {
       //get start index of "<<"
@@ -37,6 +40,8 @@ public class StringChallengeUsingString {
       //break iteration
       break;
     }
+    endTime = System.nanoTime() - startTime;
+    System.out.println(endTime);
     //print
     System.out.println(input);
   }
