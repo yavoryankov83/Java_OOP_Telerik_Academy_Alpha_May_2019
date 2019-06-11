@@ -1,4 +1,4 @@
-package lab.StringTask;
+package lab_String_StringBuilder;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package homework;
+package homework_Classes;
 
 public class MainForRefactoring {
 

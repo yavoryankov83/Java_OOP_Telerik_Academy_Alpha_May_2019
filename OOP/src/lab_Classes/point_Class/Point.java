@@ -1,4 +1,4 @@
-package lab.point_Class;
+package lab_Classes.point_Class;
 
 public class Point {
 

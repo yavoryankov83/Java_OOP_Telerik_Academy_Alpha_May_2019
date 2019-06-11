@@ -1,4 +1,4 @@
-package homework;
+package homework_Classes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,7 +42,7 @@ public class Person {
     return Collections.unmodifiableList(interests);
   }
 
-  public void addInterests(String interest){
+  public void addInterests(String interest) {
     interests.add(interest);
   }
 
@@ -60,7 +60,7 @@ public class Person {
     return Collections.unmodifiableList(friends);
   }
 
-  public void addFriends(Person... person){
+  public void addFriends(Person... person) {
     for (Person p : person) {
       friends.add(p);
     }

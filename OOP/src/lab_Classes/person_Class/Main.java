@@ -1,4 +1,4 @@
-package lab.person_Class;
+package lab_Classes.person_Class;
 
 public class Main {
 
