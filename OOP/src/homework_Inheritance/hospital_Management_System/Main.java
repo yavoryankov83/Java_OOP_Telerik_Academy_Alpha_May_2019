@@ -1,6 +1,4 @@
-package lab_Inheritance;
-
-import lab_Inheritance.hospital_Management_System.*;
+package homework_Inheritance.hospital_Management_System;
 
 public class Main {
   public static void main(String[] args) {
