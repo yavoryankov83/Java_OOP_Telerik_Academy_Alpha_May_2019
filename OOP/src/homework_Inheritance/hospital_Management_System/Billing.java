@@ -1,6 +1,4 @@
-package homework_Inheritance.hospital_Management_System;
-
-public class Billing {
+public final class Billing {
 
   private Billing() {
   }
@@ -9,20 +7,23 @@ public class Billing {
     double[] result = new double[2];
 
     boolean insured = patient.isInsured();
-    HealthInsurancePlan insurancePlan = patient.getInsurancePlan();
-    double coverage = insurancePlan.getCoverage();
+    double coverage = patient.getInsurancePlan().getCoverage();
+    int discount = patient.getInsurancePlan().getDiscount();
+
+    double insuranceBill;
+    double patientBill;
 
     if (insured) {
-      double insuranceBill = amount * coverage;
-      result[0] = insuranceBill;
-
-      double patientBill = amount - insuranceBill;
-      result[1] = patientBill - patient.getInsurancePlan().getDiscount();
+      insuranceBill = amount * coverage;
+      patientBill = amount - insuranceBill - discount;
 
     } else {
-      result[0] = 0;
-      result[1] = amount- patient.getInsurancePlan().getDiscount();
+      insuranceBill = 0;
+      patientBill = amount - discount;
     }
+
+    result[0] = insuranceBill;
+    result[1] = patientBill;
 
     return result;
   }

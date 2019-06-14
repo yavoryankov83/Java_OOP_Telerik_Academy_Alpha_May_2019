@@ -1,9 +1,7 @@
-package homework_Inheritance.hospital_Management_System;
-
 public class HealthInsurancePlan {
 
-  public static final int BASE_DISCOUNT = 20;
-  public static final int BASE_COVERAGE = 0;
+  private static final int BASE_DISCOUNT = 20;
+  private static final int BASE_COVERAGE = 0;
 
   private double coverage;
   private int discount;
@@ -17,7 +15,7 @@ public class HealthInsurancePlan {
     return coverage;
   }
 
-  public void setCoverage(double coverage) {
+  protected void setCoverage(double coverage) {
     this.coverage = coverage;
   }
 
@@ -25,7 +23,7 @@ public class HealthInsurancePlan {
     return discount;
   }
 
-  public void setDiscount(int discount) {
+  protected void setDiscount(int discount) {
     this.discount = discount;
   }
 }

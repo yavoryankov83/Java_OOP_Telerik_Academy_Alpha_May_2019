@@ -1,36 +1,32 @@
-package homework_Inheritance.hospital_Management_System;
-
 public class User {
 
-  //static for all users and increment in constructor
-  private static long id;
-
+  private long id;
   private String firtName;
   private String lastName;
   private String gender;
   private String email;
 
-  public User(String firtName, String lastName, String gender, String email) {
-    setId(++User.id);
+  protected User(long id, String firtName, String lastName, String gender, String email) {
+    setId(id);
     setFirtName(firtName);
     setLastName(lastName);
     setGender(gender);
     setEmail(email);
   }
 
-  public static long getId() {
+  public long getId() {
     return id;
   }
 
-  public static void setId(long id) {
-    User.id = id;
+  private void setId(long id) {
+    this.id = id;
   }
 
   public String getFirtName() {
     return firtName;
   }
 
-  public void setFirtName(String firtName) {
+  private void setFirtName(String firtName) {
     this.firtName = firtName;
   }
 
@@ -38,7 +34,7 @@ public class User {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  private void setLastName(String lastName) {
     this.lastName = lastName;
   }
 
@@ -46,7 +42,7 @@ public class User {
     return gender;
   }
 
-  public void setGender(String gender) {
+  private void setGender(String gender) {
     this.gender = gender;
   }
 
@@ -54,7 +50,7 @@ public class User {
     return email;
   }
 
-  public void setEmail(String email) {
+  private void setEmail(String email) {
     this.email = email;
   }
 }

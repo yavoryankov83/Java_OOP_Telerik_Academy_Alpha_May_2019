@@ -1,35 +1,23 @@
-package homework_Inheritance.hospital_Management_System;
-
 public class Staff extends User {
 
-  private long staffId;
   private int yearsOfExperience;
   private String description;
   private double salary;
 
-  public Staff(String firtName, String lastName, String gender, String email,
-               int yearsOfExperience, String description, double salary) {
-    super(firtName, lastName, gender, email);
-    setStaffId(User.getId());
+  protected Staff(long id, String firtName, String lastName, String gender,
+               String email, int yearsOfExperience,
+               String description, double salary) {
+    super(id, firtName, lastName, gender, email);
     setYearsOfExperience(yearsOfExperience);
     setDescription(description);
     setSalary(salary);
-
-  }
-
-  public long getStaffId() {
-    return staffId;
-  }
-
-  public void setStaffId(long staffId) {
-    this.staffId = staffId;
   }
 
   public int getYearsOfExperience() {
     return yearsOfExperience;
   }
 
-  public void setYearsOfExperience(int yearsOfExperience) {
+  private void setYearsOfExperience(int yearsOfExperience) {
     this.yearsOfExperience = yearsOfExperience;
   }
 
@@ -37,7 +25,7 @@ public class Staff extends User {
     return description;
   }
 
-  public void setDescription(String description) {
+  private void setDescription(String description) {
     this.description = description;
   }
 
@@ -45,7 +33,7 @@ public class Staff extends User {
     return salary;
   }
 
-  public void setSalary(double salary) {
+  private void setSalary(double salary) {
     this.salary = salary;
   }
 }
