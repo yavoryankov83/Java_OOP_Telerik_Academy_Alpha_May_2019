@@ -2,7 +2,7 @@ package com.myproject.insurancePlan;
 
 import com.myproject.insuranceBrand.InsuranceBrand;
 
-public class BronzePlan extends HealthInsurancePlan {
+public class BronzePlan extends AbstractHealthInsurancePlan {
 
   private static final double COVERAGE_BRONZE = 0.6;
   private static final int DISCOUNT_BRONZE = 25;

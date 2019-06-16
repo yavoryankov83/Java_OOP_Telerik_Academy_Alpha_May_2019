@@ -1,7 +1,7 @@
 package com.myproject.insuranceBrand;
 
 import com.myproject.IdDispacher;
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 import com.myproject.premiumCalculator.contract.PremiumCalculator;
 import com.myproject.premiumCalculator.factory.PremiumCalculatorFactory;
 import com.myproject.premiumCalculator.factory.PremiumCalculatorFactoryImpl;
@@ -43,7 +43,7 @@ public class BlueCrossBlueShield implements InsuranceBrand {
   }
 
   @Override
-  public double computeMonthlyPremium(HealthInsurancePlan insurancePlan, int age, boolean smoking) {
+  public double computeMonthlyPremium(AbstractHealthInsurancePlan insurancePlan, int age, boolean smoking) {
     PremiumCalculator premiumCalculator = getPremiumCalculatorFactory().create(insurancePlan);
 
     return premiumCalculator.calculate(age, smoking);

@@ -15,7 +15,7 @@ public final class HealthInsurancePlanFactoryImpl implements HealthInsurancePlan
           "Invalid health plan or Brand = %s or %s.";
 
   @Override
-  public HealthInsurancePlan create(String plan, InsuranceBrand brand) {
+  public AbstractHealthInsurancePlan create(String plan, InsuranceBrand brand) {
     if (plan == null || brand == null) {
       throw new IllegalArgumentException(NULL_HEALTH_PLAN_AND_BRAND_EXCEPTION);
     }

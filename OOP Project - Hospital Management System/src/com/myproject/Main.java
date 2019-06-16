@@ -3,7 +3,7 @@ package com.myproject;
 import com.myproject.insuranceBrand.InsuranceBrand;
 import com.myproject.insuranceBrand.factory.InsuranceBrandFactory;
 import com.myproject.insuranceBrand.factory.InsuranceBrandFactoryImpl;
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 import com.myproject.insurancePlan.factory.HealthInsurancePlanFactory;
 import com.myproject.insurancePlan.factory.HealthInsurancePlanFactoryImpl;
 import com.myproject.premiumCalculator.factory.PremiumCalculatorFactory;
@@ -19,7 +19,7 @@ public class Main {
 
     InsuranceBrand insuranceBrand =
             insuranceBrandFactory.create("BlueCrossBlueShield", "Blue plan", premiumCalculatorFactory);
-    HealthInsurancePlan insurancePlan = healthInsurancePlanFactory.create("platinum", insuranceBrand);
+    AbstractHealthInsurancePlan insurancePlan = healthInsurancePlanFactory.create("platinum", insuranceBrand);
 
     User staff = new User("Ivan", "Ivanov", "men",
             "ivan@abv.bg", false, insurancePlan, 60, true);

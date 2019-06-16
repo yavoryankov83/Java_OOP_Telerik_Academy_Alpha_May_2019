@@ -2,7 +2,7 @@ package com.myproject.insurancePlan;
 
 import com.myproject.insuranceBrand.InsuranceBrand;
 
-public class SilverPlan extends HealthInsurancePlan {
+public class SilverPlan extends AbstractHealthInsurancePlan {
 
   private static final double COVERAGE_SILVER = 0.7;
   private static final int DISCOUNT_SILVER = 30;

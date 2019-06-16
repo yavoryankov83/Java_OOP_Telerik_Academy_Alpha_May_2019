@@ -1,7 +1,7 @@
 package com.myproject.premiumCalculator.factory;
 
 import com.myproject.insurancePlan.GoldPlan;
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 import com.myproject.insurancePlan.PlatinumPlan;
 import com.myproject.insurancePlan.SilverPlan;
 import com.myproject.premiumCalculator.*;
@@ -11,7 +11,7 @@ public class PremiumCalculatorFactoryImpl implements
         PremiumCalculatorFactory {
 
   @Override
-  public PremiumCalculator create(HealthInsurancePlan healthInsurancePlan) {
+  public PremiumCalculator create(AbstractHealthInsurancePlan healthInsurancePlan) {
     if (healthInsurancePlan instanceof PlatinumPlan) {
       return new PremiumPlatinumCalculator();
     } else if (healthInsurancePlan instanceof GoldPlan) {

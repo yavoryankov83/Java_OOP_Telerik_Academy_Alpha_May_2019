@@ -1,8 +1,8 @@
 package com.myproject.insuranceBrand;
 
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 
 public interface InsuranceBrand {
 
-  double computeMonthlyPremium(HealthInsurancePlan insurancePlan, int age, boolean smoking);
+  double computeMonthlyPremium(AbstractHealthInsurancePlan insurancePlan, int age, boolean smoking);
 }

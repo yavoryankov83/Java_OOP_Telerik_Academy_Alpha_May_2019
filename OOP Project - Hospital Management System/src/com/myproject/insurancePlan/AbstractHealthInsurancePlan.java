@@ -2,13 +2,13 @@ package com.myproject.insurancePlan;
 
 import com.myproject.insuranceBrand.InsuranceBrand;
 
-public abstract class HealthInsurancePlan {
+public abstract class AbstractHealthInsurancePlan {
 
   private double coverage;
   private int discount;
   private InsuranceBrand offeredBy;
 
-  protected HealthInsurancePlan(InsuranceBrand offeredBy) {
+  protected AbstractHealthInsurancePlan(InsuranceBrand offeredBy) {
     setCoverage(coverage);
     setDiscount(discount);
     setOfferedBy(offeredBy);

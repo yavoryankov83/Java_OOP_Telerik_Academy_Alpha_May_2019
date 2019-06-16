@@ -1,6 +1,6 @@
 package com.myproject.user;
 
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 
 class Patient extends User {
 
@@ -9,7 +9,7 @@ class Patient extends User {
           String gender,
           String email,
           boolean insured,
-          HealthInsurancePlan insurancePlan,
+          AbstractHealthInsurancePlan insurancePlan,
           int age,
           boolean smoking) {
     super(firstName, lastName, gender, email, insured, insurancePlan, age, smoking);

@@ -1,7 +1,7 @@
 package com.myproject.user;
 
 import com.myproject.IdDispacher;
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 
 public class User {
   private long id;
@@ -10,7 +10,7 @@ public class User {
   private String gender;
   private String email;
   private boolean insured;
-  private HealthInsurancePlan insurancePlan;
+  private AbstractHealthInsurancePlan insurancePlan;
   private int age;
   private boolean smoking;
 
@@ -19,7 +19,7 @@ public class User {
               String gender,
               String email,
               boolean insured,
-              HealthInsurancePlan insurancePlan,
+              AbstractHealthInsurancePlan insurancePlan,
               int age,
               boolean smoking) {
     setId(IdDispacher.getId());
@@ -81,11 +81,11 @@ public class User {
     this.insured = insured;
   }
 
-  public HealthInsurancePlan getInsurancePlan() {
+  public AbstractHealthInsurancePlan getInsurancePlan() {
     return insurancePlan;
   }
 
-  private void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+  private void setInsurancePlan(AbstractHealthInsurancePlan insurancePlan) {
     this.insurancePlan = insurancePlan;
   }
 

@@ -1,6 +1,6 @@
 package com.myproject.user;
 
-import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.AbstractHealthInsurancePlan;
 
 class Nurse extends Staff {
 
@@ -9,7 +9,7 @@ class Nurse extends Staff {
         String gender,
         String email,
         boolean insured,
-        HealthInsurancePlan insurancePlan,
+        AbstractHealthInsurancePlan insurancePlan,
         int age,
         boolean smoking,
         int yearsOfExperience,
