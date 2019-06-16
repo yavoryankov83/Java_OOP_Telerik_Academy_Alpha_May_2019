@@ -1,8 +1,6 @@
 package com.myproject;
 
-import com.myproject.contracts.HealthInsurancePlanFactory;
-import com.myproject.contracts.InsuranceBrand;
-import com.myproject.contracts.InsuranceBrandFactory;
+import com.myproject.contracts.*;
 import com.myproject.factories.HealthInsurancePlanFactoryImpl;
 import com.myproject.factories.InsuranceBrandFactoryImpl;
 import com.myproject.insurance_models.HealthInsurancePlan;
@@ -14,7 +12,8 @@ public class Main {
     HealthInsurancePlanFactory healthInsurancePlanFactory = new HealthInsurancePlanFactoryImpl();
     InsuranceBrandFactory insuranceBrandFactory = new InsuranceBrandFactoryImpl();
 
-    InsuranceBrand insuranceBrand = insuranceBrandFactory.create("BlueCrossBlueShield", "Blue plan");
+    InsuranceBrand insuranceBrand =
+            insuranceBrandFactory.create("BlueCrossBlueShield", "Blue plan");
     HealthInsurancePlan insurancePlan = healthInsurancePlanFactory.create("platinum", insuranceBrand);
 
     User staff = new User("Ivan", "Ivanov", "men",
