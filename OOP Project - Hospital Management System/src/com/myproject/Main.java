@@ -1,19 +1,24 @@
 package com.myproject;
 
-import com.myproject.contracts.*;
-import com.myproject.factories.HealthInsurancePlanFactoryImpl;
-import com.myproject.factories.InsuranceBrandFactoryImpl;
-import com.myproject.insurance_models.HealthInsurancePlan;
-import com.myproject.user_models.User;
+import com.myproject.insuranceBrand.InsuranceBrand;
+import com.myproject.insuranceBrand.factory.InsuranceBrandFactory;
+import com.myproject.insuranceBrand.factory.InsuranceBrandFactoryImpl;
+import com.myproject.insurancePlan.HealthInsurancePlan;
+import com.myproject.insurancePlan.factory.HealthInsurancePlanFactory;
+import com.myproject.insurancePlan.factory.HealthInsurancePlanFactoryImpl;
+import com.myproject.premiumCalculator.factory.PremiumCalculatorFactory;
+import com.myproject.premiumCalculator.factory.PremiumCalculatorFactoryImpl;
+import com.myproject.user.User;
 
 public class Main {
   public static void main(String[] args) {
 
     HealthInsurancePlanFactory healthInsurancePlanFactory = new HealthInsurancePlanFactoryImpl();
     InsuranceBrandFactory insuranceBrandFactory = new InsuranceBrandFactoryImpl();
+    PremiumCalculatorFactory premiumCalculatorFactory = new PremiumCalculatorFactoryImpl();
 
     InsuranceBrand insuranceBrand =
-            insuranceBrandFactory.create("BlueCrossBlueShield", "Blue plan");
+            insuranceBrandFactory.create("BlueCrossBlueShield", "Blue plan", premiumCalculatorFactory);
     HealthInsurancePlan insurancePlan = healthInsurancePlanFactory.create("platinum", insuranceBrand);
 
     User staff = new User("Ivan", "Ivanov", "men",

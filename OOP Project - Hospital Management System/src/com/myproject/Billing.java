@@ -1,6 +1,6 @@
 package com.myproject;
 
-import com.myproject.user_models.User;
+import com.myproject.user.User;
 
 final class Billing {
 
