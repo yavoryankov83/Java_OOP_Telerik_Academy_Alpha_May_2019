@@ -1,0 +1,127 @@
+Hospital Management System (HMS)
+Let's put Inheritance into practice!
+Since we now have a basic understanding of inheritance and IS-A test, let’s now put them into practice through this simple exercise. In this assignment, we will implement a simple class hierarchy for users of a Hospital Management System (HMS). An HMS can help Hospitals to track everything from user registration to patient treatment to rooms allotted to in-patients and so on. In this exercise, let’s restrict ourselves to implementing only different types of Users.
+Users can be of three types: Patient, Doctor, and Nurse.
+Doctor & Nurse are Staff members (i.e., Doctor IS-A Staff Nurse IS-A Staff) and all of them (i.e., Patient, Doctor, Nurse, and Staff) are of type User.
+Below are details of each class along with information about their instance variables including their data types indicated in parenthesis.
+User: id (long), firstName (String), lastName (String), gender (String), email (String)
+Patient: patientId (long), insured (boolean)
+Staff: staffId (long), yearsOfExperience (int), description (String), salary (double)
+Doctor: doctorId (long), specialisation (String)
+Nurse: nurseId (long)
+Note: Ids should be inherited. 
+As part of this assignment, you would implement the above classes. Classes should reflect the inheritance relationship. Classes should include the getters & setters for each of the fields. Make sure to follow correct naming convention for getters & setters as one of the fields is a boolean (covered in Naming Conventions part of Classes 1 lecture). Notice how the variables have been named (e.g., yearsOfExperience) as discussed in naming conventions lecture.
+Finally, make sure to use private access modifiers for all fields and getters setters would be public (remember Information Hiding principle & Encapsulation).
+Thanks & Happy Coding!
+=============================================================================
+HMS with billing component
+Putting Polymorphism into practice!
+Let’s now extend the HMS system with Billing Component, which would be responsible for billing a patient. Patient & User classes are needed for this exercise. In this exercise, we will put polymorphism concept & instanceof operator into practice. This exercise should give you a better feel on how nicely object-oriented programming models real-world scenarios.
+When a patient is being billed after treatment, hospitals would apply any insurance that the patient may be having. That way the insurance company would pay a part of the medical bill and the remaining will be paid by patient.
+Let’s assume we have the following four classes that represent four insurance plans and a patient can buy one of them:
+PlatinumPlan - the highest coverage of 0.9, i.e., it covers 90% of the total medical expenses and the patient would pay the remaining 10%.
+GoldPlan - the coverage of 0.8, i.e., it covers 80% of the total medical expenses and the patient would pay the remaining 20%.
+SilverPlan - the coverage of 0.7, i.e., it covers 70% of the total medical expenses and the patient would pay the remaining 30%.
+BronzePlan - the coverage of 0.6, i.e., it covers 60% of the total medical expenses and the patient would pay the remaining 40%.
+These four classes would extend from another class called HealthInsurancePlan.
+Coverage is indicated by a double field named ‘coverage’ and would be part of HealthInsurancePlan class. Corresponding getter (getCoverage) setter (setCoverage) should also be provided for 'coverage'. Making 'coverage' and its getter setter part of HealthInsurancePlan and not part of its sub-classes would help avoid code duplication (a benefit of inheritance). However, specific sub-classes (e.g. PlatinumPlan) would set the appropriate value for the coverage field.
+Next, you need to add a new field called ‘insurancePlan’, which is of type HealthInsurancePlan to the Patient class (implemented in previous exercise) and leave this field uninitialised, i.e., gets a default of null. This field would indicate the insurance plan that a patient has. So, it indicates a HAS-A relationship, which was mentioned in the lecture that discussed IS-A Test. This field 'insurancePlan' would be set by setter (setInsurancePlan) and has corresponding getter (getInsurancePlan). Getter would have a return type of HealthInsurancePlan while setter would have a parameter whose type is HealthInsurancePlan. As you can see, setInsurancePlan(HealthInsurancePlan) would give us the polymorphism benefit as we can pass an instance of any of the above 4 classes.
+Next, you would implement the billing logic, which goes into a new class called Billing.java, which would have a single static method called computePaymentAmount. Template code is provided for this class. Input to this method is a Patient object & 'amount', which is a double value indicating the amount the patient is billed before applying insurance. The method returns a double[] and its first element would have the amount that the insurance company would pay while second element would have the amount that patient has to pay. As mentioned above, you need to make use of 'coverage' of the insurance plan. Note that some patient's may not have any insurance plan in which case 'patient.getInsurancePlan()' in the below code would return a null. Once the patient's part is computed, additional discount should be applied on the patient's part depending on their insurance plan, which is as follows:
+PlatinumPlan: $50 discount
+GoldPlan: $40 discount
+SilverPlan: $30 discount
+BronzePlan: $25 discount
+If the patient does not have any insurance plan, then a discount of $20 is applied.
+As an example, if the patient uses Platinum Plan and if the total amount billed is $1000, then after applying the coverage of 0.9, patient's part would be $100. Up on applying the discount of $50 for Platinum, the final amount that patient must pay would be only $50.
+Thanks & Happy Coding!!
+
+public class Billing {
+ 
+    public static double[] computePaymentAmount(Patient patient, double amount) {
+        double[] payments = new double[2];
+ 
+        HealthInsurancePlan patientInsurancePlan = patient.getInsurancePlan();
+ 
+        double coverage = 0;
+        if (patientInsurancePlan != null) {
+            coverage = patientInsurancePlan.getCoverage();
+        }
+ 
+        int discount = 20;
+        if (patientInsurancePlan != null) {
+            discount = patientInsurancePlan.getDiscount();
+        }
+ 
+        double coveredAmount = amount * coverage + discount;
+        if (coveredAmount > amount) {
+            coveredAmount = amount;
+        }
+ 
+        payments[0] = coveredAmount;
+        payments[1] = amount - coverage;
+ 
+        return payments;
+    }
+ 
+}
+===============================================================================
+Computing Health Insurance Premium for Staff
+Let's put Abstract Classes & Methods into practice
+This is a very simple exercise and it would enable us to use abstract classes & methods. In this exercise, we will extend the HMS system. Earlier we introduced a billing component to bill the patients, which was dependent on their insurance plan (platinum/gold/silver/bronze). Let's now build something for staff members. Like patients, staff members would also need health insurance. So, as employees of the Hospital, every month staff members would be paying a premium (i.e., some amount of money) towards their health insurance. In this exercise we would compute this monthly premium, which would be dependent on the chosen insurance plan (i.e., platinum/gold/silver/bronze) along with monthly salary of the staff member as follows:
+platinum - 8% of the salary
+gold - 7% of salary
+silver - 6% of salary
+bronze - 5% of salary
+Later, in another exercise (part 2), we will further improve this monthly premium computation logic based on additional factors.
+Implementation specifics:
+    1. Move insured & insurancePlan fields from Patient.java to User.java. Earlier, these fields were specific to Patient. But, now since we are talking about staff members also having health insurance and since both Staff & Patient are sub-classes of User, we can now move these two fields along with their getters and setters into User class.
+    2. Let's introduce monthly premium calculation logic in classes corresponding to different insurance plans as the logic is dependent on insurance plan chosen in addition to salary. So, let's introduce the following abstract method in the super class HealthInsurancePlan and this method would be overridden in specific sub-classes.
+public abstract double computeMonthlyPremium(double salary);  
+    1. One more thing - let's introduce more complex insurance company than just the name we were using. Add the following class to your hierarchy:
+public class InsuranceBrand {
+    private long id;
+    private String name;
+
+    public long getId() {
+        return id;
+    }
+    public void setId(long id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+and change the offeredBy field in HelathInsurancePlan class.
+Thanks & Happy Coding!!
+==============================================================================Computing Health Insurance Premium for Staff (Part 2)
+Let's put Interfaces into practice
+In this exercise, we will make use of interfaces and will extend the earlier exercise where we used abstract classes & methods to incorporate logic to compute monthly health insurance premium for staff members. There we used only salary information of the User. Now, let's extend it to also include two more parameters:
+    1. age
+    2. whether or not the user smokes.
+Rules for these parameters can vary across insurance plans ( platinum/gold/silver/bronze) & and from one insurance company to another. Let's assume that we have only one insurance company called BlueCrossBlueShield and the rules for the different plans are as below:
+Platinum Plan: If age > 55 then add 200 to premium. If user smokes then add 100
+Gold Plan: If age > 55 then add 150 to premium. If user smokes then add 90
+Silver Plan: If age > 55 then add 100 to premium. If user smokes then add 80
+Bronze Plan: If age > 55 then add 50 to premium. If user smokes then add 70
+Essentially, premium increases if the user is over 55 years of age. Similarly, if user smokes, then his/her premium would also be increased. Note that age & smoking are independent here, i.e., if age < 55 and user smokes, then we increase the premium only for smoking.
+As we can see the above rules are specific to BlueCrossBlueShield, which IS-A type of Insurance Brand. Recall from earlier exercises that we already have a class called InsuranceBrand. So, the implementation for the above rules would be provided in BlueCrossBlueShield in a method called computeMonthlyPremium. Let's also assume that InsuranceBrand is very generic and can be used across class hierarchies. In this case, it may be better to represent it as an interface. So, we can change it from a class to interface and it would declare only a single method computeMonthlyPremium, whose declaration is as follows and would thus be implemented by BlueCrossBlueShield. As you can see the method parameters can be used to implement the above logic and return the appropriate insurance premium. Also, since we are making InsuranceBrand an interface, its existing fields (id & name) and the corresponding getters & setters can be moved into the subclass BlueCrossBlueShield. 
+public double computeMonthlyPremium(HealthInsurancePlan insurancePlan, int age, boolean smoking);  
+Recall that in the previous exercise, monthly premium was computed using only salary & insurance plan using a similarly named method computeMonthlyPremium(double), which was implemented by individual insurance plan classes (PlatinumPlan/GoldPlan/SilverPlan/BronzePlan). This method should now additionally take the two new parameters 'age' & 'smoking' too. Below is the implementation of computeMonthlyPremium in PlatinumPlan.java and you can implement it in other insurance plan related classes too. getOfferedBy() is from the super class and it would return an instance of InsuranceBrand. Notice, that we are passing 'this' reference to computeMonthlyPremium as it is expecting a HealthInsurancePlan instance and in this case it would be an instance of PlatinumPlan. 
+public  double computeMonthlyPremium(double salary,  int age,  boolean smoking)  {
+    return  0.08  \* salary + getOfferedBy().computeMonthlyPremium(this, age, smoking);
+}
+Finally, add age (int) & smoking (boolean) fields in User.java and make sure setters & getters are added with correct conventions. Although, these fields are added in User class, they really do not serve any purpose in this exercise as computeMonthlyPremium above takes age & smoking values separately. 
+Below is a sample invocation code:
+User staff =  new  User();  
+InsuranceBrand insuranceBrand =  new  BlueCrossBlueShield();  
+HealthInsurancePlan insurancePlan =  new  PlatinumPlan();  
+
+insurancePlan.setOfferedBy(insuranceBrand);
+staff.setInsurancePlan(insurancePlan);
+insurancePlan.computeMonthlyPremium(5000,  56,  true);
+Overall just to summarize, we have two class hierarchies here: (i) an abstract class HealthInsurancePlan and the specific insurance plans as its subtypes (ii) an interface InsuranceBrand and its subtypes (BlueCrossBlueShield). HealthInsurancePlan defines both state & behavior while InsuranceBrand defines just the behavior as it should be.
+Thanks & Happy Coding!!
