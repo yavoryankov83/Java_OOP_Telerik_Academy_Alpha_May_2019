@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ToothpasteImpl extends AbstractProduct implements Product, Toothpaste {
-
-    private static final String INGREDIENTS_NULL_EXCEPTION = "Ingredients should not be null.";
+public class ToothpasteImpl extends ProductImpl implements Product, Toothpaste {
 
     private List<String> ingredients;
 
@@ -27,10 +25,45 @@ public class ToothpasteImpl extends AbstractProduct implements Product, Toothpas
 
     private void setIngredients(List<String> ingredients) {
         if (ingredients == null){
-            throw new IllegalArgumentException(INGREDIENTS_NULL_EXCEPTION);
+            throw new IllegalArgumentException(ProductConstants.TOOTHPASTE_INGREDIENTS_NULL_EXCEPTION);
         }
 
         this.ingredients = new ArrayList<>(ingredients);
+    }
+
+    @Override
+    void setName(String name) {
+        if (name == null){
+            throw new IllegalArgumentException(ProductConstants.NAME_NULL_EXCEPTION);
+        }
+
+        if (name.length() < ProductConstants.TOOTHPASTE_NAME_MIN_LENGTH || name.length() > ProductConstants.TOOTHPASTE_NAME_MAX_LENGTH){
+            throw new IllegalArgumentException(ProductConstants.TOOTHPASTE_NAME_LENGTH_EXCEPTION);
+        }
+
+        super.setName(name);
+    }
+
+    @Override
+    void setBrand(String brand) {
+        if (brand == null) {
+            throw new IllegalArgumentException(ProductConstants.BRAND_NULL_EXCEPTION);
+        }
+
+        if (brand.length() < ProductConstants.TOOTHPASTE_BRAND_NAME_MIN_LENGTH || brand.length() > ProductConstants.TOOTHPASTE_BRAND_NAME_MAX_LENGTH) {
+            throw new IllegalArgumentException(ProductConstants.TOOTHPASTE_BRAND_NAME_LENGTH_EXCEPTION);
+        }
+
+        super.setBrand(brand);
+    }
+
+    @Override
+    void setPrice(double price) {
+        if (price < 0) {
+            throw new IllegalArgumentException(ProductConstants.TOOTHPASTE_PRICE_NEGATIVE_EXCEPTION);
+        }
+
+        super.setPrice(price);
     }
 
     @Override

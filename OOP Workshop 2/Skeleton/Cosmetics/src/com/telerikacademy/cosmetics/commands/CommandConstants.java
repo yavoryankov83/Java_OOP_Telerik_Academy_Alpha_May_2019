@@ -1,7 +1,11 @@
 package com.telerikacademy.cosmetics.commands;
 
-public final class CommandConstants {
-  public static final String INVALID_COMMAND = "Invalid command name: %s!";
+final class CommandConstants {
+
+  private CommandConstants() {
+  }
+
+  static final String INVALID_COMMAND = "Invalid command name: %s!";
   static final String CATEGORY_EXISTS = "Category with name %s already exists!";
   static final String CATEGORY_CREATED = "Category with name %s was created!";
   static final String CATEGORY_DOES_NOT_EXIST = "Category %s does not exist!";

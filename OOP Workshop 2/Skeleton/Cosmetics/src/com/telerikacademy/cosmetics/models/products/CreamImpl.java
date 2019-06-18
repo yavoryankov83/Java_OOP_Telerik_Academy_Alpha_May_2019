@@ -5,20 +5,7 @@ import com.telerikacademy.cosmetics.models.common.ScentType;
 import com.telerikacademy.cosmetics.models.contracts.Cream;
 import com.telerikacademy.cosmetics.models.contracts.Product;
 
-public class CreamImpl extends AbstractProduct implements Cream, Product {
-
-  private static final int CREAM_NAME_MIN_LENGTH = 3;
-  private static final int CREAM_NAME_MAX_LENGTH = 15;
-  private static final String CREAM_NAME_LENGTH_EXCEPTION =
-          "Cream name should be between 3 and 15 symbols.";
-
-  private static final int BRAND_NAME_MIN_LENGTH = 3;
-  private static final int BRAND_NAME_MAX_LENGTH = 10;
-  private static final String BRAND_NAME_LENGTH_EXCEPTION =
-          "Brand name should be between 3 and 10 symbols.";
-
-  private static final String PRICE_SMALLER_OR_EQUAL_TO_ZERO_EXCEPTION = "Price should be greater than 0.";
-
+public class CreamImpl extends ProductImpl implements Product, Cream {
 
   private ScentType scent;
 
@@ -37,33 +24,33 @@ public class CreamImpl extends AbstractProduct implements Cream, Product {
   }
 
   @Override
-  protected void setName(String name) {
+  public void setName(String name) {
     if (name == null) {
-      throw new IllegalArgumentException(NAME_NULL_EXCEPTION);
+      throw new IllegalArgumentException(ProductConstants.NAME_NULL_EXCEPTION);
     }
-    if (name.length() < CREAM_NAME_MIN_LENGTH || name.length() > CREAM_NAME_MAX_LENGTH) {
-      throw new IllegalArgumentException(CREAM_NAME_LENGTH_EXCEPTION);
+    if (name.length() < ProductConstants.CREAM_NAME_MIN_LENGTH || name.length() > ProductConstants.CREAM_NAME_MAX_LENGTH) {
+      throw new IllegalArgumentException(ProductConstants.CREAM_NAME_LENGTH_EXCEPTION);
     }
 
     super.setName(name);
   }
 
   @Override
-  protected void setBrand(String brand) {
+  void setBrand(String brand) {
     if (brand == null) {
-      throw new IllegalArgumentException(BRAND_NULL_EXCEPTION);
+      throw new IllegalArgumentException(ProductConstants.BRAND_NULL_EXCEPTION);
     }
-    if (brand.length() < BRAND_NAME_MIN_LENGTH || brand.length() > BRAND_NAME_MAX_LENGTH) {
-      throw new IllegalArgumentException(BRAND_NAME_LENGTH_EXCEPTION);
+    if (brand.length() < ProductConstants.CREAM_BRAND_NAME_MIN_LENGTH || brand.length() > ProductConstants.CREAM_BRAND_NAME_MAX_LENGTH) {
+      throw new IllegalArgumentException(ProductConstants.CREAM_BRAND_NAME_LENGTH_EXCEPTION);
     }
 
     super.setBrand(brand);
   }
 
   @Override
-  protected void setPrice(double price) {
+  void setPrice(double price) {
     if (price <= 0) {
-      throw new IllegalArgumentException(PRICE_SMALLER_OR_EQUAL_TO_ZERO_EXCEPTION);
+      throw new IllegalArgumentException(ProductConstants.CREAM_PRICE_NEGATIVE_OR_EQUAL_TO_ZERO_EXCEPTION);
     }
 
     super.setPrice(price);

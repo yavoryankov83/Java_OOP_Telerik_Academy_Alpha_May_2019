@@ -13,14 +13,38 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ProductImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AbstractProduct#0;class#AbstractProduct#0" />
+                <element signature="method#print#0;class#AbstractProduct#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/Startup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,15 +63,9 @@
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/core/factories/CosmeticsFactoryImpl.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/common/ScentType.java" />
         <option value="$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateToothpaste_Should.java" />
-        <option value="$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateShampoo_Should.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/Startup.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Category.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Product.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/CategoryImpl.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ShampooImpl.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ToothpasteImpl.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/CreamImpl.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/AbstractProduct.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/ShoppingCart.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/common/GenderType.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/common/UsageType.java" />
@@ -59,8 +77,18 @@
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/cart/ShoppingCartImpl.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateToothpaste.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateCream.java" />
-        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CommandConstants.java" />
         <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateShampoo.java" />
+        <option value="$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateShampoo_Should.java" />
+        <option value="$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateCream_Should.java" />
+        <option value="$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/product/Constructor_Should.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Product.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CommandConstants.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/AbstractProduct.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ShampooImpl.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ToothpasteImpl.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/CreamImpl.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ProductConstants.java" />
+        <option value="$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ProductImpl.java" />
       </list>
     </option>
   </component>
@@ -74,7 +102,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,22 +133,6 @@
               <item name="Cosmetics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="Cosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="Cosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cosmetics" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -138,6 +149,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Cosmetics.Tests">
+  <component name="RunManager" selected="Application.Startup">
     <configuration name="Startup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.telerikacademy.cosmetics.Startup" />
       <module name="Cosmetics" />
@@ -171,23 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Cosmetics.Tests (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cosmetics.Tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Cosmetics.Tests (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cosmetics.Tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Cosmetics.Tests (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Cosmetics.Tests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cosmetics.Tests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -203,13 +199,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Constructor_Should.throwWhenTheCreamBrandIsLargerThanMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cosmetics.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.telerikacademy.cosmetics.tests.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.telerikacademy.cosmetics.tests.product" />
+      <option name="MAIN_CLASS_NAME" value="com.telerikacademy.cosmetics.tests.product.Constructor_Should" />
+      <option name="METHOD_NAME" value="throwWhenTheCreamBrandIsLargerThanMaxValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Constructor_Should.throwWhenTheCreamNameIsLargerThanMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cosmetics.Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.telerikacademy.cosmetics.tests.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.telerikacademy.cosmetics.tests.product" />
+      <option name="MAIN_CLASS_NAME" value="com.telerikacademy.cosmetics.tests.product.Constructor_Should" />
+      <option name="METHOD_NAME" value="throwWhenTheCreamNameIsLargerThanMaxValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Cosmetics.Tests" />
         <item itemvalue="Application.Startup" />
-        <item itemvalue="JUnit.All in Cosmetics.Tests (5)" />
-        <item itemvalue="JUnit.All in Cosmetics.Tests (4)" />
-        <item itemvalue="JUnit.All in Cosmetics.Tests (3)" />
+        <item itemvalue="JUnit.All in Cosmetics.Tests (1)" />
+        <item itemvalue="JUnit.All in Cosmetics.Tests" />
+        <item itemvalue="JUnit.Constructor_Should.throwWhenTheCreamBrandIsLargerThanMaxValue" />
+        <item itemvalue="JUnit.Constructor_Should.throwWhenTheCreamNameIsLargerThanMaxValue" />
       </list>
     </recent_temporary>
   </component>
@@ -227,38 +255,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Cosmetics_Tests - 2019.06.17 at 18h 07m 34s.xml">
+    <history-entry file="Constructor_Should_throwWhenTheToothpastePriceIsNegative - 2019.06.18 at 20h 49m 08s.xml">
+      <configuration name="Constructor_Should.throwWhenTheToothpastePriceIsNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheToothpasteNameIsLargerThenMaxValue - 2019.06.18 at 20h 51m 31s.xml">
+      <configuration name="Constructor_Should.throwWhenTheToothpasteNameIsLargerThenMaxValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheToothpasteBrandIsSmallerThenMinValue - 2019.06.18 at 20h 52m 40s.xml">
+      <configuration name="Constructor_Should.throwWhenTheToothpasteBrandIsSmallerThenMinValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheToothpasteBrandIsLargerThenMaxValue - 2019.06.18 at 20h 52m 58s.xml">
+      <configuration name="Constructor_Should.throwWhenTheToothpasteBrandIsLargerThenMaxValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheCreamNameIsSmallerThanMinValue - 2019.06.18 at 20h 53m 48s.xml">
+      <configuration name="Constructor_Should.throwWhenTheCreamNameIsSmallerThanMinValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheCreamNameIsLargerThanMaxValue - 2019.06.18 at 20h 54m 21s.xml">
+      <configuration name="Constructor_Should.throwWhenTheCreamNameIsLargerThanMaxValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constructor_Should_throwWhenTheCreamBrandIsLargerThanMaxValue - 2019.06.18 at 20h 54m 51s.xml">
+      <configuration name="Constructor_Should.throwWhenTheCreamBrandIsLargerThanMaxValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Cosmetics_Tests - 2019.06.18 at 20h 55m 29s.xml">
       <configuration name="All in Cosmetics.Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(1) - 2019.06.17 at 18h 10m 49s.xml">
+    <history-entry file="All_in_Cosmetics_Tests_(1) - 2019.06.18 at 23h 36m 18s.xml">
       <configuration name="All in Cosmetics.Tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(2) - 2019.06.17 at 18h 13m 09s.xml">
-      <configuration name="All in Cosmetics.Tests (2)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(3) - 2019.06.17 at 18h 14m 31s.xml">
-      <configuration name="All in Cosmetics.Tests (3)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(4) - 2019.06.17 at 18h 17m 24s.xml">
-      <configuration name="All in Cosmetics.Tests (4)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(5) - 2019.06.17 at 18h 20m 31s.xml">
-      <configuration name="All in Cosmetics.Tests (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests_(5) - 2019.06.17 at 21h 00m 45s.xml">
-      <configuration name="All in Cosmetics.Tests (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests - 2019.06.17 at 23h 36m 52s.xml">
-      <configuration name="All in Cosmetics.Tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Cosmetics_Tests - 2019.06.17 at 23h 41m 20s.xml">
-      <configuration name="All in Cosmetics.Tests" configurationId="JUnit" />
+    <history-entry file="All_in_Cosmetics_Tests_(1) - 2019.06.18 at 23h 44m 18s.xml">
+      <configuration name="All in Cosmetics.Tests (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/product/Constructor_Should.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/core/contracts/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -326,48 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateToothpaste_Should.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/Startup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Shampoo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateShampoo_Should.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Toothpaste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -468,41 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/ShoppingCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/CategoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CategoryImpl#0;class#CategoryImpl#0" />
-            <element signature="method#setName#0;class#CategoryImpl#0" />
-            <element signature="method#addProduct#0;class#CategoryImpl#0" />
-            <element signature="method#removeProduct#0;class#CategoryImpl#0" />
-            <element signature="method#print#0;class#CategoryImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ToothpasteImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ToothpasteImpl#0;class#ToothpasteImpl#0" />
-            <element signature="method#setIngredients#0;class#ToothpasteImpl#0" />
-            <element signature="method#print#0;class#ToothpasteImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/core/factories/CommandFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -535,27 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-290">
           <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateCream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CommandConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -593,10 +519,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Product.java">
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateCream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="39">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/product/Constructor_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateCream_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateShampoo_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateShoppingCart_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics.Tests/src/com/telerikacademy/cosmetics/tests/cosmeticsfactory/CreateToothpaste_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Shampoo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -607,10 +594,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Toothpaste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CreateCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/commands/CommandConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="method#CommandConstants#0;class#CommandConstants#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/contracts/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/CreamImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="456">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CreamImpl#0;class#CreamImpl#0" />
@@ -622,31 +647,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ProductConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="33" column="107" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+          <folding>
+            <element signature="method#ProductConstants#0;class#ProductConstants#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ShampooImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="324">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ShampooImpl#0;class#ShampooImpl#0" />
             <element signature="method#setMilliliters#0;class#ShampooImpl#0" />
+            <element signature="method#setName#0;class#ShampooImpl#0" />
+            <element signature="method#setBrand#0;class#ShampooImpl#0" />
+            <element signature="method#setPrice#0;class#ShampooImpl#0" />
             <element signature="method#print#0;class#ShampooImpl#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/AbstractProduct.java">
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ToothpasteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="252">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ToothpasteImpl#0;class#ToothpasteImpl#0" />
+            <element signature="method#setIngredients#0;class#ToothpasteImpl#0" />
+            <element signature="method#setName#0;class#ToothpasteImpl#0" />
+            <element signature="method#setBrand#0;class#ToothpasteImpl#0" />
+            <element signature="method#setPrice#0;class#ToothpasteImpl#0" />
+            <element signature="method#print#0;class#ToothpasteImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/CategoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CategoryImpl#0;class#CategoryImpl#0" />
+            <element signature="method#setName#0;class#CategoryImpl#0" />
+            <element signature="method#addProduct#0;class#CategoryImpl#0" />
+            <element signature="method#removeProduct#0;class#CategoryImpl#0" />
+            <element signature="method#print#0;class#CategoryImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/models/products/ProductImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AbstractProduct#0;class#AbstractProduct#0" />
-            <element signature="method#setName#0;class#AbstractProduct#0" />
-            <element signature="method#setBrand#0;class#AbstractProduct#0" />
-            <element signature="method#setPrice#0;class#AbstractProduct#0" />
             <element signature="method#print#0;class#AbstractProduct#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cosmetics/src/com/telerikacademy/cosmetics/Startup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
