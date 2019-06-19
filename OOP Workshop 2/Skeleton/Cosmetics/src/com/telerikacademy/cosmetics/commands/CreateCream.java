@@ -33,12 +33,12 @@ public class CreateCream implements Command {
 
     private String createCream(String creamName, String creamBrand, double creamPrice, GenderType creamGender, ScentType creamScent) {
         if (cosmeticsRepository.getProducts().containsKey(creamName)) {
-            return String.format(CREAM_ALREADY_EXIST, creamName);
+            return String.format(CommandConstants.CREAM_ALREADY_EXIST, creamName);
         }
 
         Product cream = cosmeticsFactory.createCream(creamName, creamBrand, creamPrice, creamGender, creamScent);
         cosmeticsRepository.getProducts().put(creamName, cream);
 
-        return String.format(CREAM_CREATED, creamName);
+        return String.format(CommandConstants.CREAM_CREATED, creamName);
     }
 }

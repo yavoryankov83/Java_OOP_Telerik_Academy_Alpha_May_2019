@@ -24,6 +24,6 @@ public class TotalPrice implements Command {
         if (shoppingCart.getProductList().size() == 0) {
             return "No product in shopping cart!";
         }
-        return String.format(TOTAL_PRICE_IN_SHOPPING_CART, shoppingCart.totalPrice());
+        return String.format(CommandConstants.TOTAL_PRICE_IN_SHOPPING_CART, shoppingCart.totalPrice());
     }
 }

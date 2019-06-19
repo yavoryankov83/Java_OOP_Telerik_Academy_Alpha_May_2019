@@ -28,11 +28,11 @@ public class AddToCategory implements Command {
 
     private String addToCategory(String categoryNameToAdd, String productToAdd) {
         if (!cosmeticsRepository.getCategories().containsKey(categoryNameToAdd)) {
-            return String.format(CATEGORY_DOES_NOT_EXIST, categoryNameToAdd);
+            return String.format(CommandConstants.CATEGORY_DOES_NOT_EXIST, categoryNameToAdd);
         }
 
         if (!cosmeticsRepository.getProducts().containsKey(productToAdd)) {
-            return String.format(PRODUCT_DOES_NOT_EXIST, productToAdd);
+            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productToAdd);
         }
 
         Category category = cosmeticsRepository.getCategories().get(categoryNameToAdd);
@@ -40,6 +40,6 @@ public class AddToCategory implements Command {
 
         category.addProduct(product);
 
-        return String.format(PRODUCT_ADDED_TO_CATEGORY, productToAdd, categoryNameToAdd);
+        return String.format(CommandConstants.PRODUCT_ADDED_TO_CATEGORY, productToAdd, categoryNameToAdd);
     }
 }

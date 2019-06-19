@@ -34,12 +34,12 @@ public class CreateToothpaste implements Command {
 
     private String createToothpaste(String toothpasteName, String toothpasteBrand, double toothpastePrice, GenderType toothpasteGender, List<String> toothpasteIngredients) {
         if (cosmeticsRepository.getProducts().containsKey(toothpasteName)) {
-            return String.format(TOOTHPASTE_ALREADY_EXIST, toothpasteName);
+            return String.format(CommandConstants.TOOTHPASTE_ALREADY_EXIST, toothpasteName);
         }
 
         Product toothpaste = cosmeticsFactory.createToothpaste(toothpasteName, toothpasteBrand, toothpastePrice, toothpasteGender, toothpasteIngredients);
         cosmeticsRepository.getProducts().put(toothpasteName, toothpaste);
 
-        return String.format(TOOTHPASTE_CREATED, toothpasteName);
+        return String.format(CommandConstants.TOOTHPASTE_CREATED, toothpasteName);
     }
 }

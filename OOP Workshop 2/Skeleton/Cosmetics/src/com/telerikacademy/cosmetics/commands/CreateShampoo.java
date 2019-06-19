@@ -34,12 +34,12 @@ public class CreateShampoo implements Command {
 
     private String createShampoo(String shampooName, String shampooBrand, double shampooPrice, GenderType shampooGender, int shampooMilliliters, UsageType shampooUsage) {
         if (cosmeticsRepository.getProducts().containsKey(shampooName)) {
-            return String.format(SHAMPOO_ALREADY_EXIST, shampooName);
+            return String.format(CommandConstants.SHAMPOO_ALREADY_EXIST, shampooName);
         }
 
         Product shampoo = cosmeticsFactory.createShampoo(shampooName, shampooBrand, shampooPrice, shampooGender, shampooMilliliters, shampooUsage);
         cosmeticsRepository.getProducts().put(shampooName, shampoo);
 
-        return String.format(SHAMPOO_CREATED, shampooName);
+        return String.format(CommandConstants.SHAMPOO_CREATED, shampooName);
     }
 }

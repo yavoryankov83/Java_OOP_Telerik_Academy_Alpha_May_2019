@@ -26,7 +26,7 @@ public class ShowCategory implements Command {
 
     private String showCategory(String categoryToShow) {
         if (!cosmeticsRepository.getCategories().containsKey(categoryToShow)) {
-            return String.format(CATEGORY_DOES_NOT_EXIST, categoryToShow);
+            return String.format(CommandConstants.CATEGORY_DOES_NOT_EXIST, categoryToShow);
         }
 
         Category category = cosmeticsRepository.getCategories().get(categoryToShow);

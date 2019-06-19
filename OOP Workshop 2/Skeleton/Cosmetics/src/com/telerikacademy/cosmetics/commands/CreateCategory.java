@@ -27,12 +27,12 @@ public class CreateCategory implements Command {
 
     private String createCategory(String categoryName) {
         if (cosmeticsRepository.getCategories().containsKey(categoryName)) {
-            return String.format(CATEGORY_EXISTS, categoryName);
+            return String.format(CommandConstants.CATEGORY_EXISTS, categoryName);
         }
 
         Category category = cosmeticsFactory.createCategory(categoryName);
         cosmeticsRepository.getCategories().put(categoryName, category);
 
-        return String.format(CATEGORY_CREATED, categoryName);
+        return String.format(CommandConstants.CATEGORY_CREATED, categoryName);
     }
 }

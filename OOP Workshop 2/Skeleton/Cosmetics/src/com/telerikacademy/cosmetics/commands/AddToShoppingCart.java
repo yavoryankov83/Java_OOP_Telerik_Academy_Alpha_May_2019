@@ -27,12 +27,12 @@ public class AddToShoppingCart implements Command {
 
     private String addToShoppingCart(String productName) {
         if (!cosmeticsRepository.getProducts().containsKey(productName)) {
-            return String.format(PRODUCT_DOES_NOT_EXIST, productName);
+            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productName);
         }
 
         Product product = cosmeticsRepository.getProducts().get(productName);
         cosmeticsRepository.getShoppingCart().addProduct(product);
 
-        return String.format(PRODUCT_ADDED_TO_SHOPPING_CART, productName);
+        return String.format(CommandConstants.PRODUCT_ADDED_TO_SHOPPING_CART, productName);
     }
 }

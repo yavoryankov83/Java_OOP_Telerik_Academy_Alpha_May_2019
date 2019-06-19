@@ -26,17 +26,17 @@ public class RemoveFromShoppingCart implements Command {
 
     private String removeFromShoppingCart(String productName) {
         if (!cosmeticsRepository.getProducts().containsKey(productName)) {
-            return String.format(PRODUCT_DOES_NOT_EXIST, productName);
+            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productName);
         }
 
         Product product = cosmeticsRepository.getProducts().get(productName);
 
         if (!cosmeticsRepository.getShoppingCart().containsProduct(product)) {
-            return String.format(PRODUCT_DOES_NOT_EXIST_IN_SHOPPING_CART, productName);
+            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST_IN_SHOPPING_CART, productName);
         }
 
         cosmeticsRepository.getShoppingCart().removeProduct(product);
 
-        return String.format(PRODUCT_REMOVED_FROM_SHOPPING_CART, productName);
+        return String.format(CommandConstants.PRODUCT_REMOVED_FROM_SHOPPING_CART, productName);
     }
 }

@@ -28,11 +28,11 @@ public class RemoveFromCategory implements Command {
 
     private String removeCategory(String categoryNameToRemove, String productToRemove) {
         if (!cosmeticsRepository.getCategories().containsKey(categoryNameToRemove)) {
-            return String.format(CATEGORY_DOES_NOT_EXIST, categoryNameToRemove);
+            return String.format(CommandConstants.CATEGORY_DOES_NOT_EXIST, categoryNameToRemove);
         }
 
         if (!cosmeticsRepository.getProducts().containsKey(productToRemove)) {
-            return String.format(PRODUCT_DOES_NOT_EXIST, productToRemove);
+            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productToRemove);
         }
 
         Category category = cosmeticsRepository.getCategories().get(categoryNameToRemove);
@@ -40,6 +40,6 @@ public class RemoveFromCategory implements Command {
 
         category.removeProduct(product);
 
-        return String.format(PRODUCT_REMOVED_CATEGORY, productToRemove, categoryNameToRemove);
+        return String.format(CommandConstants.PRODUCT_REMOVED_CATEGORY, productToRemove, categoryNameToRemove);
     }
 }
