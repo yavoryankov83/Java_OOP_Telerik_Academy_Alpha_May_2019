@@ -17,49 +17,49 @@ public class Constructor_Should {
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheNameIsNull() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl(null, "brand", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl(null, "brand", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheBrandIsNull() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("name", null, 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("name", null, 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheNameIsSmallerThanMinValue() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("0", "brand", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("0", "brand", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheNameIsLargerThanMaxValue() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("01234567890", "brand", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("01234567890", "brand", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheBrandIsSmallerThanMinValue() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("name", "0", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("name", "0", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenTheBrandIsLargerThanMaxValue() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("name", "01234567890", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("name", "01234567890", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void throwWhenPriceIsNegative() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("name", "brand", -1, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("name", "brand", -1, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     @Test
     public void createShampooWhenValidValuesArePassed() {
         // Arrange, Act, Assert
-        Product shampoo = new ShampooImpl("name", "brand", 10, GenderType.MEN, 10, UsageType.EVERY_DAY);
+        Product shampoo = new ShampooImpl("name", "brand", 10, GenderType.MEN, 10, UsageType.EVERYDAY);
     }
 
     //ToothpasteImpl Tests

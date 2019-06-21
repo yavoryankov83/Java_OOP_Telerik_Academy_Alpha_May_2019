@@ -1,0 +1,77 @@
+####################>Input<####################
+
+CreateCream Bochko Sopharma 4.99 Unisex Lavender
+CreateCream ForeverYoung NotAScam 199.99 Women Rose
+CreateCream Grease ManlyStuff 1.29 Men Vanilla
+CreateCategory Creams
+AddToCategory Creams Bochko
+AddToCategory Creams ForeverYoung
+AddToCategory Creams Grease
+AddToShoppingCart Bochko
+AddToShoppingCart ForeverYoung
+AddToShoppingCart Grease
+ShowCategory Creams
+TotalPrice
+RemoveFromCategory Creams ForeverYoung
+ShowCategory Creams
+RemoveFromShoppingCart Grease
+TotalPrice
+ShowCategory Creams
+RemoveFromShoppingCart ForeverYoung
+TotalPrice
+Exit
+
+
+####################>Output<####################
+
+Cream with name Bochko was created!
+Cream with name ForeverYoung was created!
+Cream with name Grease was created!
+Category with name Creams was created!
+Product Bochko added to category Creams!
+Product ForeverYoung added to category Creams!
+Product Grease added to category Creams!
+Product Bochko was added to the shopping cart!
+Product ForeverYoung was added to the shopping cart!
+Product Grease was added to the shopping cart!
+#Category: Creams
+#Bochko Sopharma
+ #Price: $4,99
+ #Gender: Unisex
+ #Scent: Lavender
+#ForeverYoung NotAScam
+ #Price: $199,99
+ #Gender: Women
+ #Scent: Rose
+#Grease ManlyStuff
+ #Price: $1,29
+ #Gender: Men
+ #Scent: Vanilla
+
+$206,27 total price currently in the shopping cart
+Product ForeverYoung removed from category Creams!
+#Category: Creams
+#Bochko Sopharma
+ #Price: $4,99
+ #Gender: Unisex
+ #Scent: Lavender
+#Grease ManlyStuff
+ #Price: $1,29
+ #Gender: Men
+ #Scent: Vanilla
+
+Product Grease was removed from the shopping cart!
+$204,98 total price currently in the shopping cart
+#Category: Creams
+#Bochko Sopharma
+ #Price: $4,99
+ #Gender: Unisex
+ #Scent: Lavender
+#Grease ManlyStuff
+ #Price: $1,29
+ #Gender: Men
+ #Scent: Vanilla
+
+Product ForeverYoung was removed from the shopping cart!
+
+$4,99 total price currently in the shopping cart

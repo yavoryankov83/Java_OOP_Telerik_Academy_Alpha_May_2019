@@ -59,7 +59,7 @@ public class CategoryImpl implements Category {
 
   @Override
   public String print() {
-    if (products.size() == 0) {
+    if (products.isEmpty()) {
       return String.format("#Category: %s%n" + " #No product in this category", name);
     }
 

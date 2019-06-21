@@ -7,9 +7,9 @@ import com.telerikacademy.cosmetics.models.contracts.ShoppingCart;
 import java.util.Map;
 
 public interface CosmeticsRepository {
-    public ShoppingCart getShoppingCart();
+  public ShoppingCart getShoppingCart();
 
-    public Map<String, Category> getCategories();
+  public Map<String, Category> getCategories();
 
-    public Map<String, Product> getProducts();
+  public Map<String, Product> getProducts();
 }

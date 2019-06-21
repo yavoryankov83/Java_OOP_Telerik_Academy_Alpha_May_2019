@@ -7,23 +7,21 @@ import com.telerikacademy.cosmetics.models.contracts.ShoppingCart;
 
 import java.util.List;
 
-import static com.telerikacademy.cosmetics.commands.CommandConstants.TOTAL_PRICE_IN_SHOPPING_CART;
-
 public class TotalPrice implements Command {
-    private CosmeticsRepository cosmeticsRepository;
-    private CosmeticsFactory cosmeticsFactory;
+  private CosmeticsRepository cosmeticsRepository;
+  private CosmeticsFactory cosmeticsFactory;
 
-    public TotalPrice(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
-        this.cosmeticsRepository = cosmeticsRepository;
-        this.cosmeticsFactory = cosmeticsFactory;
-    }
+  public TotalPrice(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
+    this.cosmeticsRepository = cosmeticsRepository;
+    this.cosmeticsFactory = cosmeticsFactory;
+  }
 
-    @Override
-    public String execute(List<String> parameters) {
-        ShoppingCart shoppingCart = cosmeticsRepository.getShoppingCart();
-        if (shoppingCart.getProductList().size() == 0) {
-            return "No product in shopping cart!";
-        }
-        return String.format(CommandConstants.TOTAL_PRICE_IN_SHOPPING_CART, shoppingCart.totalPrice());
+  @Override
+  public String execute(List<String> parameters) {
+    ShoppingCart shoppingCart = cosmeticsRepository.getShoppingCart();
+    if (shoppingCart.getProductList().size() == 0) {
+      return "No product in shopping cart!";
     }
+    return String.format(CommandConstants.TOTAL_PRICE_IN_SHOPPING_CART, shoppingCart.totalPrice());
+  }
 }

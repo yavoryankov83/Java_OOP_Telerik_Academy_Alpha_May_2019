@@ -7,36 +7,34 @@ import com.telerikacademy.cosmetics.models.contracts.Product;
 
 import java.util.List;
 
-import static com.telerikacademy.cosmetics.commands.CommandConstants.*;
-
 public class RemoveFromShoppingCart implements Command {
-    private CosmeticsRepository cosmeticsRepository;
-    private CosmeticsFactory cosmeticsFactory;
+  private CosmeticsRepository cosmeticsRepository;
+  private CosmeticsFactory cosmeticsFactory;
 
-    public RemoveFromShoppingCart(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
-        this.cosmeticsRepository = cosmeticsRepository;
-        this.cosmeticsFactory = cosmeticsFactory;
+  public RemoveFromShoppingCart(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
+    this.cosmeticsRepository = cosmeticsRepository;
+    this.cosmeticsFactory = cosmeticsFactory;
+  }
+
+  @Override
+  public String execute(List<String> parameters) {
+    String productToRemoveFromCart = parameters.get(0);
+    return removeFromShoppingCart(productToRemoveFromCart);
+  }
+
+  private String removeFromShoppingCart(String productName) {
+    if (!cosmeticsRepository.getProducts().containsKey(productName)) {
+      return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productName);
     }
 
-    @Override
-    public String execute(List<String> parameters) {
-        String productToRemoveFromCart = parameters.get(0);
-        return removeFromShoppingCart(productToRemoveFromCart);
+    Product product = cosmeticsRepository.getProducts().get(productName);
+
+    if (!cosmeticsRepository.getShoppingCart().containsProduct(product)) {
+      return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST_IN_SHOPPING_CART, productName);
     }
 
-    private String removeFromShoppingCart(String productName) {
-        if (!cosmeticsRepository.getProducts().containsKey(productName)) {
-            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productName);
-        }
+    cosmeticsRepository.getShoppingCart().removeProduct(product);
 
-        Product product = cosmeticsRepository.getProducts().get(productName);
-
-        if (!cosmeticsRepository.getShoppingCart().containsProduct(product)) {
-            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST_IN_SHOPPING_CART, productName);
-        }
-
-        cosmeticsRepository.getShoppingCart().removeProduct(product);
-
-        return String.format(CommandConstants.PRODUCT_REMOVED_FROM_SHOPPING_CART, productName);
-    }
+    return String.format(CommandConstants.PRODUCT_REMOVED_FROM_SHOPPING_CART, productName);
+  }
 }

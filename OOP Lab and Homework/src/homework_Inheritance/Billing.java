@@ -21,7 +21,7 @@ public class Billing {
 
     } else {
       result[0] = 0;
-      result[1] = amount- patient.getInsurancePlan().getDiscount();
+      result[1] = amount - patient.getInsurancePlan().getDiscount();
     }
 
     return result;

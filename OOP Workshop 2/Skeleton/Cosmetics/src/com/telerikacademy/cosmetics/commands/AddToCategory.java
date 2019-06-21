@@ -8,38 +8,36 @@ import com.telerikacademy.cosmetics.models.contracts.Product;
 
 import java.util.List;
 
-import static com.telerikacademy.cosmetics.commands.CommandConstants.*;
-
 public class AddToCategory implements Command {
-    private CosmeticsRepository cosmeticsRepository;
-    private CosmeticsFactory cosmeticsFactory;
+  private CosmeticsRepository cosmeticsRepository;
+  private CosmeticsFactory cosmeticsFactory;
 
-    public AddToCategory(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
-        this.cosmeticsRepository = cosmeticsRepository;
-        this.cosmeticsFactory = cosmeticsFactory;
+  public AddToCategory(CosmeticsRepository cosmeticsRepository, CosmeticsFactory cosmeticsFactory) {
+    this.cosmeticsRepository = cosmeticsRepository;
+    this.cosmeticsFactory = cosmeticsFactory;
+  }
+
+  @Override
+  public String execute(List<String> parameters) {
+    String categoryNameToAdd = parameters.get(0);
+    String productToAdd = parameters.get(1);
+    return addToCategory(categoryNameToAdd, productToAdd);
+  }
+
+  private String addToCategory(String categoryNameToAdd, String productToAdd) {
+    if (!cosmeticsRepository.getCategories().containsKey(categoryNameToAdd)) {
+      return String.format(CommandConstants.CATEGORY_DOES_NOT_EXIST, categoryNameToAdd);
     }
 
-    @Override
-    public String execute(List<String> parameters) {
-        String categoryNameToAdd = parameters.get(0);
-        String productToAdd = parameters.get(1);
-        return addToCategory(categoryNameToAdd, productToAdd);
+    if (!cosmeticsRepository.getProducts().containsKey(productToAdd)) {
+      return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productToAdd);
     }
 
-    private String addToCategory(String categoryNameToAdd, String productToAdd) {
-        if (!cosmeticsRepository.getCategories().containsKey(categoryNameToAdd)) {
-            return String.format(CommandConstants.CATEGORY_DOES_NOT_EXIST, categoryNameToAdd);
-        }
+    Category category = cosmeticsRepository.getCategories().get(categoryNameToAdd);
+    Product product = cosmeticsRepository.getProducts().get(productToAdd);
 
-        if (!cosmeticsRepository.getProducts().containsKey(productToAdd)) {
-            return String.format(CommandConstants.PRODUCT_DOES_NOT_EXIST, productToAdd);
-        }
+    category.addProduct(product);
 
-        Category category = cosmeticsRepository.getCategories().get(categoryNameToAdd);
-        Product product = cosmeticsRepository.getProducts().get(productToAdd);
-
-        category.addProduct(product);
-
-        return String.format(CommandConstants.PRODUCT_ADDED_TO_CATEGORY, productToAdd, categoryNameToAdd);
-    }
+    return String.format(CommandConstants.PRODUCT_ADDED_TO_CATEGORY, productToAdd, categoryNameToAdd);
+  }
 }

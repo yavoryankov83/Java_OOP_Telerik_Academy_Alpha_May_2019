@@ -14,7 +14,7 @@ public class CreateShampoo_Should {
         // Arrange
         CosmeticsFactory factory = new CosmeticsFactoryImpl();
         // Act
-        Product shampoo = factory.createShampoo("name", "brand", 10, GenderType.UNISEX, 10, UsageType.EVERY_DAY);
+        Product shampoo = factory.createShampoo("name", "brand", 10, GenderType.UNISEX, 10, UsageType.EVERYDAY);
         // Assert
         Assert.assertTrue(shampoo instanceof Product);
     }
