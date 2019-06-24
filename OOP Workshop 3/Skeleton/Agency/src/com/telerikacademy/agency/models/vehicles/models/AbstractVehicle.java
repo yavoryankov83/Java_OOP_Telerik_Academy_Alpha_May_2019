@@ -35,15 +35,30 @@ public abstract class AbstractVehicle implements Vehicle {
   private void setPricePerKilometer(double pricePerKilometer) {
     ModelsValidator.validateFieldBoundries(
             pricePerKilometer,
-            ModelsConstants.VEHICLE_PRICE_PER_KILOMETER_MIN_VALUE,
-            ModelsConstants.VEHICLE_PRICE_PER_KILOMETER_MAX_VALUE,
-            ModelsExceptions.VEHICLE_PRICE_PER_KILOMETER_EXCEPTION);
+            getPricePerKilometerMinValue(),
+            getPricePerKilometerMaxValue(),
+            getPricePerKilometerExceptionMessage());
 
     this.pricePerKilometer = pricePerKilometer;
   }
 
+  //helper method
+  protected double getPricePerKilometerMinValue() {
+    return ModelsConstants.VEHICLE_PRICE_PER_KILOMETER_MIN_VALUE;
+  }
+
+  //helper method
+  protected double getPricePerKilometerMaxValue() {
+    return ModelsConstants.VEHICLE_PRICE_PER_KILOMETER_MAX_VALUE;
+  }
+
+  //helper method
+  protected String getPricePerKilometerExceptionMessage() {
+    return ModelsExceptions.VEHICLE_PRICE_PER_KILOMETER_EXCEPTION;
+  }
+
   @Override
-  public String print() {
+  public String toString() {
     StringBuilder builder = new StringBuilder();
 
     builder

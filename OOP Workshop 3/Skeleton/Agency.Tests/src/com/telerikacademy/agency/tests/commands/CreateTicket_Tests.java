@@ -7,6 +7,8 @@ import com.telerikacademy.agency.core.AgencyRepositoryImpl;
 import com.telerikacademy.agency.core.contracts.AgencyFactory;
 import com.telerikacademy.agency.core.contracts.AgencyRepository;
 import com.telerikacademy.agency.core.factories.AgencyFactoryImpl;
+import com.telerikacademy.agency.models.JourneyImpl;
+import com.telerikacademy.agency.models.vehicles.models.BusImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -75,7 +77,8 @@ public class CreateTicket_Tests {
         List<String> arguments = new ArrayList<>();
         arguments.add("0");
         arguments.add("2");
-        agencyRepository.addJourney(null);
+        agencyRepository.addJourney(new JourneyImpl("Nevada", "Texass", 500,
+                new BusImpl(35, 0.5)));
 
         // Act
         testCommand.execute(arguments);

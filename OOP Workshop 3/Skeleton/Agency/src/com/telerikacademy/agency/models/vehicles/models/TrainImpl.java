@@ -19,12 +19,6 @@ public class TrainImpl extends AbstractVehicle implements Train {
   int validatePassangerCapacity(int passangerCapacity) {
     ModelsValidator.validateFieldBoundries(
             passangerCapacity,
-            ModelsConstants.VEHICLE_PASSENGER_MIN_CAPACITY,
-            ModelsConstants.VEHICLE_PASSENGER_MAX_CAPACITY,
-            ModelsExceptions.VEHICLE_PASSANGER_CAPACITY_EXCEPTON);
-
-    ModelsValidator.validateFieldBoundries(
-            passangerCapacity,
             ModelsConstants.TRAIN_PASSENGER_MIN_CAPACITY,
             ModelsConstants.TRAIN_PASSENGER_MAX_CAPACITY,
             ModelsExceptions.TRAIN_PASSANGER_CAPACITY_EXCEPTION);
@@ -53,12 +47,12 @@ public class TrainImpl extends AbstractVehicle implements Train {
   }
 
   @Override
-  public String print() {
+  public String toString() {
     StringBuilder builder = new StringBuilder();
 
     builder
             .append(String.format("Train ----%n"))
-            .append(super.print())
+            .append(super.toString())
             .append(String.format("Carts amount: %d%n", getCarts()));
 
     return builder.toString();

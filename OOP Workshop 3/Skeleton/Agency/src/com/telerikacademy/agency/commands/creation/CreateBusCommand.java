@@ -7,20 +7,20 @@ import com.telerikacademy.agency.models.vehicles.contracts.Vehicle;
 
 import java.util.List;
 
-import static com.telerikacademy.agency.commands.CommandsConstants.INVALID_NUMBER_OF_ARGUMENTS;
+public class CreateBusCommand extends AbstractCreateCommand implements Command {
 
-public class CreateBusCommand implements Command {
   private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
-  private final AgencyFactory factory;
-  private final AgencyRepository agencyRepository;
-
-  public CreateBusCommand(AgencyFactory factory, AgencyRepository agencyRepository) {
-    this.factory = factory;
-    this.agencyRepository = agencyRepository;
-  }
-
   private int passengerCapacity;
   private double pricePerKilometer;
+
+  public CreateBusCommand(AgencyFactory factory, AgencyRepository agencyRepository) {
+    super(factory, agencyRepository);
+  }
+
+  @Override
+  public int getExpectedNumberOfArguments() {
+    return EXPECTED_NUMBER_OF_ARGUMENTS;
+  }
 
   @Override
   public String execute(List<String> parameters) {
@@ -28,19 +28,14 @@ public class CreateBusCommand implements Command {
 
     parseParameters(parameters);
 
-    Vehicle bus = factory.createBus(passengerCapacity, pricePerKilometer);
-    agencyRepository.addVehicle(bus);
+    Vehicle bus = getFactory().createBus(passengerCapacity, pricePerKilometer);
+    getAgencyRepository().addVehicle(bus);
 
-    return String.format("Vehicle with ID %d was created.", agencyRepository.getVehicles().size() - 1);
+    return String.format("Vehicle with ID %d was created.", getAgencyRepository().getVehicles().size() - 1);
   }
 
-  private void validateInput(List<String> parameters) {
-    if (parameters.size() != EXPECTED_NUMBER_OF_ARGUMENTS) {
-      throw new IllegalArgumentException(String.format(INVALID_NUMBER_OF_ARGUMENTS, EXPECTED_NUMBER_OF_ARGUMENTS, parameters.size()));
-    }
-  }
-
-  private void parseParameters(List<String> parameters) {
+  @Override
+  void parseParameters(List<String> parameters) {
     try {
       passengerCapacity = Integer.parseInt(parameters.get(0));
       pricePerKilometer = Double.parseDouble(parameters.get(1));

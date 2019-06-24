@@ -1,5 +1,7 @@
 package com.telerikacademy.agency.models;
 
+import com.telerikacademy.agency.models.common.ModelsExceptions;
+import com.telerikacademy.agency.models.common.ModelsValidator;
 import com.telerikacademy.agency.models.contracts.Journey;
 import com.telerikacademy.agency.models.contracts.Ticket;
 
@@ -9,13 +11,19 @@ public class TicketImpl implements Ticket {
   private double administrativeCosts;
 
   public TicketImpl(Journey journey, double administrativeCosts) {
-    this.journey = journey;
+    setJourney(journey);
     this.administrativeCosts = administrativeCosts;
   }
 
   @Override
   public Journey getJourney() {
     return journey;
+  }
+
+  private void setJourney(Journey journey) {
+    ModelsValidator.valideForNull(journey, ModelsExceptions.JOURNEY_NULL_EXCEPTION);
+
+    this.journey = journey;
   }
 
   @Override
@@ -29,7 +37,7 @@ public class TicketImpl implements Ticket {
   }
 
   @Override
-  public String print() {
+  public String toString() {
     StringBuilder builder = new StringBuilder();
 
     builder

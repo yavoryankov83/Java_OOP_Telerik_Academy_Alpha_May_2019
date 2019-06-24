@@ -1,6 +1,7 @@
 package com.telerikacademy.agency.commands.enums;
 
 public enum CommandType {
+
   CREATEBUS,
   CREATEAIRPLANE,
   CREATEJOURNEY,

@@ -10,6 +10,7 @@ import java.util.List;
 import static com.telerikacademy.agency.commands.CommandsConstants.JOIN_DELIMITER;
 
 public class ListJourneysCommand implements Command {
+
   private List<Journey> journeys;
 
   private AgencyRepository agencyRepository;
@@ -18,6 +19,7 @@ public class ListJourneysCommand implements Command {
     this.agencyRepository = agencyRepository;
   }
 
+  @Override
   public String execute(List<String> parameters) {
     this.journeys = agencyRepository.getJourneys();
 
@@ -34,7 +36,7 @@ public class ListJourneysCommand implements Command {
 
     List<String> stringifiedJourneys = new ArrayList<>();
     for (Journey journey : journeys) {
-      stringifiedJourneys.add(journey.print());
+      stringifiedJourneys.add(journey.toString());
     }
     return stringifiedJourneys;
   }

@@ -1,6 +1,6 @@
 package com.telerikacademy.agency.models.contracts;
 
-public interface Ticket extends Printable {
+public interface Ticket {
 
   Journey getJourney();
 

@@ -7,43 +7,38 @@ import com.telerikacademy.agency.models.vehicles.contracts.Vehicle;
 
 import java.util.List;
 
-import static com.telerikacademy.agency.commands.CommandsConstants.INVALID_NUMBER_OF_ARGUMENTS;
-
-public class CreateAirplaneCommand implements Command {
+public class CreateAirplaneCommand extends AbstractCreateCommand implements Command {
 
   private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
-  private final AgencyFactory factory;
-  private final AgencyRepository agencyRepository;
+
   private int passengerCapacity;
   private double pricePerKilometer;
   private boolean hasFreeFood;
 
-  public CreateAirplaneCommand(AgencyFactory factory, AgencyRepository agencyRepository) {
-    this.factory = factory;
-    this.agencyRepository = agencyRepository;
+  public CreateAirplaneCommand(AgencyFactory factory,
+                               AgencyRepository agencyRepository) {
+    super(factory, agencyRepository);
   }
 
+  @Override
+  public int getExpectedNumberOfArguments() {
+    return EXPECTED_NUMBER_OF_ARGUMENTS;
+  }
+
+  @Override
   public String execute(List<String> parameters) {
     validateInput(parameters);
 
     parseParameters(parameters);
 
-    Vehicle airplane = factory.createAirplane(passengerCapacity, pricePerKilometer, hasFreeFood);
-    agencyRepository.addVehicle(airplane);
+    Vehicle airplane = getFactory().createAirplane(passengerCapacity, pricePerKilometer, hasFreeFood);
+    getAgencyRepository().addVehicle(airplane);
 
-    return String.format("Vehicle with ID %d was created.", agencyRepository.getVehicles().size() - 1);
+    return String.format("Vehicle with ID %d was created.", getAgencyRepository().getVehicles().size() - 1);
   }
 
-  private void validateInput(List<String> parameters) {
-    if (parameters.size() != EXPECTED_NUMBER_OF_ARGUMENTS) {
-      throw new IllegalArgumentException(String.format(
-              INVALID_NUMBER_OF_ARGUMENTS,
-              EXPECTED_NUMBER_OF_ARGUMENTS,
-              parameters.size()));
-    }
-  }
-
-  private void parseParameters(List<String> parameters) {
+  @Override
+  void parseParameters(List<String> parameters) {
     try {
       passengerCapacity = Integer.parseInt(parameters.get(0));
       pricePerKilometer = Double.parseDouble(parameters.get(1));

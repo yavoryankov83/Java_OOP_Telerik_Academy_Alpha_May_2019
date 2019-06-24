@@ -37,12 +37,12 @@ public class AirplaneImpl extends AbstractVehicle implements Airplane {
   }
 
   @Override
-  public String print() {
+  public String toString() {
     StringBuilder builder = new StringBuilder();
 
     builder
             .append(String.format("Airplane ----%n"))
-            .append(super.print())
+            .append(super.toString())
             .append(String.format("Has free food: %s%n", hasFreeFood()));
 
     return builder.toString();

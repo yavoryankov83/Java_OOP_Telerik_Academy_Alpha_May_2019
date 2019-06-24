@@ -42,4 +42,8 @@ public final class ModelsExceptions {
 
   public static final String JOURNEY_VEHICLE_NULL_EXCEPTION =
           "Vehicle shouldn't be null.";
+
+  //Ticket exception
+  public static final String JOURNEY_NULL_EXCEPTION =
+          "Journey should't be null.";
 }

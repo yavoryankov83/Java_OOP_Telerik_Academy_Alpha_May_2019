@@ -31,7 +31,7 @@ public class JourneyImpl implements Journey {
             ModelsExceptions.JOURNEY_START_LOCATION_NULL_EXCEPTION);
 
     ModelsValidator.validateFieldBoundries(
-            startLocation,
+            startLocation.length(),
             ModelsConstants.JOURNEY_START_LOCATION_MIN_LENGTH,
             ModelsConstants.JOURNEY_START_LOCATION_MAX_LENGTH,
             ModelsExceptions.JOURNEY_START_LOCATION_LENGTH_EXCEPTION);
@@ -50,7 +50,7 @@ public class JourneyImpl implements Journey {
             ModelsExceptions.JOURNEY_DESTINATION_NULL_EXCEPTION);
 
     ModelsValidator.validateFieldBoundries(
-            destination,
+            destination.length(),
             ModelsConstants.JOURNEY_DESTINATION_MIN_LENGTH,
             ModelsConstants.JOURNEY_DESTINATION_MAX_LENGTH,
             ModelsExceptions.JOURNEY_DESTINATION_LENGTH_EXCEPTION);
@@ -92,7 +92,7 @@ public class JourneyImpl implements Journey {
   }
 
   @Override
-  public String print() {
+  public String toString() {
 
     StringBuilder builder = new StringBuilder();
 

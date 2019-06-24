@@ -13,7 +13,107 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/AbstractCreateCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AbstractCreateCommand#0;class#AbstractCreateCommand#0" />
+                <element signature="method#validateInput#0;class#AbstractCreateCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateAirplaneCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#execute#0;class#CreateAirplaneCommand#0" />
+                <element signature="method#parseParameters#0;class#CreateAirplaneCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTicketCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#CreateTicketCommand#0;class#CreateTicketCommand#0" />
+                <element signature="method#execute#0;class#CreateTicketCommand#0" />
+                <element signature="method#parseParameters#0;class#CreateTicketCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateBusCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#CreateBusCommand#0;class#CreateBusCommand#0" />
+                <element signature="method#execute#0;class#CreateBusCommand#0" />
+                <element signature="method#parseParameters#0;class#CreateBusCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTrainCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+              <folding>
+                <element signature="method#CreateTrainCommand#0;class#CreateTrainCommand#0" />
+                <element signature="method#execute#0;class#CreateTrainCommand#0" />
+                <element signature="method#parseParameters#0;class#CreateTrainCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateJourneyCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#CreateJourneyCommand#0;class#CreateJourneyCommand#0" />
+                <element signature="method#execute#0;class#CreateJourneyCommand#0" />
+                <element signature="method#parseParameters#0;class#CreateJourneyCommand#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/CommandFactoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,12 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Printable.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Journey.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Ticket.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/TransportType.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Train.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Vehicle.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Airplane.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/VehicleConstants.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/VehicleExceptions.java" />
@@ -43,11 +137,7 @@
         <option value="$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/Journey_Tests.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyExceptions.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/CommandFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/enums/CommandType.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/contracts/Command.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateAirplaneCommand.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateBusCommand.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTrainCommand.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/CommandsConstants.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyRepository.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/CommandFactory.java" />
@@ -55,28 +145,39 @@
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Engine.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Reader.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Writer.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/AgencyFactoryImpl.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleReader.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleWriter.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Printable.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/VehicleType.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListJourneysCommand.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListTicketsCommand.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListVehiclesCommand.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTicketCommand.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelConstants.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelExceptions.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ValidatorHelper.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/TicketImpl.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyImpl.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AbstractVehicle.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/Startup.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsConstants.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/AgencyFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsExceptions.java" />
+        <option value="$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/commands/CreateTicket_Tests.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyImpl.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/TicketImpl.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Vehicle.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Journey.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Ticket.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AirplaneImpl.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListVehiclesCommand.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/TrainImpl.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/BusImpl.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AirplaneImpl.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsConstants.java" />
-        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsExceptions.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AbstractVehicle.java" />
         <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsValidator.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyFactory.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListJourneysCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListTicketsCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/enums/CommandType.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateAirplaneCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateBusCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTrainCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTicketCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateJourneyCommand.java" />
+        <option value="$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/AbstractCreateCommand.java" />
       </list>
     </option>
   </component>
@@ -90,7 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,7 +223,7 @@
               <item name="Agency" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="agency" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -130,8 +231,8 @@
               <item name="Agency" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="agency" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Skeleton" type="b2602c69:ProjectViewProjectNode" />
@@ -139,20 +240,20 @@
               <item name="Agency" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="agency" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="creation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OOP Workshop 2/Skeleton" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -185,14 +286,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Agency.Tests (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Agency.Tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in Agency.Tests (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Agency.Tests" />
       <option name="PACKAGE_NAME" value="" />
@@ -202,6 +295,14 @@
       </method>
     </configuration>
     <configuration name="All in Agency.Tests (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Agency.Tests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Agency.Tests (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Agency.Tests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -220,10 +321,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Startup" />
+        <item itemvalue="JUnit.All in Agency.Tests (5)" />
         <item itemvalue="JUnit.All in Agency.Tests" />
         <item itemvalue="JUnit.All in Agency.Tests (4)" />
         <item itemvalue="JUnit.All in Agency.Tests (3)" />
-        <item itemvalue="JUnit.All in Agency.Tests (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -241,24 +342,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Agency_Tests_(5) - 2019.06.21 at 18h 52m 50s.xml">
-      <configuration name="All in Agency.Tests (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Agency_Tests_(5) - 2019.06.21 at 18h 52m 56s.xml">
-      <configuration name="All in Agency.Tests (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Agency_Tests_(5) - 2019.06.22 at 01h 04m 52s.xml">
-      <configuration name="All in Agency.Tests (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Agency_Tests - 2019.06.22 at 02h 54m 04s.xml">
-      <configuration name="All in Agency.Tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Agency_Tests_(1) - 2019.06.22 at 02h 54m 56s.xml">
-      <configuration name="All in Agency.Tests (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Agency_Tests_(2) - 2019.06.23 at 00h 02m 20s.xml">
-      <configuration name="All in Agency.Tests (2)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Agency_Tests_(3) - 2019.06.23 at 00h 04m 01s.xml">
       <configuration name="All in Agency.Tests (3)" configurationId="JUnit" />
     </history-entry>
@@ -271,11 +354,30 @@
     <history-entry file="All_in_Agency_Tests - 2019.06.23 at 01h 26m 41s.xml">
       <configuration name="All in Agency.Tests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_Agency_Tests_(1) - 2019.06.24 at 17h 25m 11s.xml">
+      <configuration name="All in Agency.Tests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Agency_Tests_(2) - 2019.06.24 at 21h 32m 53s.xml">
+      <configuration name="All in Agency.Tests (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Agency_Tests_(3) - 2019.06.24 at 21h 33m 57s.xml">
+      <configuration name="All in Agency.Tests (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Agency_Tests_(4) - 2019.06.24 at 21h 36m 03s.xml">
+      <configuration name="All in Agency.Tests (4)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Agency_Tests - 2019.06.24 at 21h 37m 31s.xml">
+      <configuration name="All in Agency.Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Agency_Tests_(5) - 2019.06.24 at 22h 17m 22s.xml">
+      <configuration name="All in Agency.Tests (5)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -332,156 +434,17 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/BusImpl_Tests.java">
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="504">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/AirplaneImpl_Tests.java">
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/VehicleType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/TrainImpl_Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/Journey_Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/contracts/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/CommandParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/AgencyFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/CommandFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/enums/CommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/EngineImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -492,12 +455,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyExceptions.java" />
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyConstants.java" />
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/VehicleType.java">
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/ConsoleWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/CommandParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/AgencyRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/BusImpl_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/AirplaneImpl_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/vehicles/TrainImpl_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/models/Journey_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/commands/CreateAirplane_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/EngineImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsExceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="method#ModelsExceptions#0;class#ModelsExceptions#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/commands/CreateTicket_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/TicketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#print#0;class#TicketImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -515,141 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListJourneysCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListTicketsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListVehiclesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/CommandsConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <element signature="method#CommandsConstants#0;class#CommandsConstants#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/providers/CommandParserImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/AgencyRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateAirplaneCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateBusCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateJourneyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTicketCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTrainCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Journey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/contracts/Train.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -657,68 +609,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agency.Tests/src/com/telerikacademy/agency/tests/commands/CreateTicket_Tests.java">
+    <entry file="jar:///opt/java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="205">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/TicketImpl.java">
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/contracts/Journey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TicketImpl#0;class#TicketImpl#0" />
-            <element signature="method#print#0;class#TicketImpl#0" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/JourneyImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        <state relative-caret-position="1272">
+          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#JourneyImpl#0;class#JourneyImpl#0" />
             <element signature="method#setStartLocation#0;class#JourneyImpl#0" />
-            <element signature="method#setDestination#0;class#JourneyImpl#0" />
             <element signature="method#setDistance#0;class#JourneyImpl#0" />
             <element signature="method#setVehicle#0;class#JourneyImpl#0" />
-            <element signature="method#print#0;class#JourneyImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsExceptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="method#ModelsExceptions#0;class#ModelsExceptions#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="method#ValidatorHelper#0;class#ValidatorHelper#0" />
-            <element signature="method#validateFieldBoundries#0;class#ValidatorHelper#0" />
-            <element signature="method#validateFieldBoundries#1;class#ValidatorHelper#0" />
-            <element signature="method#validateFieldBoundries#2;class#ValidatorHelper#0" />
-            <element signature="method#valideForNull#0;class#ValidatorHelper#0" />
+            <element signature="method#toString#0;class#JourneyImpl#0" />
           </folding>
         </state>
       </provider>
@@ -732,22 +651,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AbstractVehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="648">
           <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AbstractVehicle#0;class#AbstractVehicle#0" />
-            <element signature="method#setPassangerCapacity#0;class#AbstractVehicle#0" />
             <element signature="method#setPricePerKilometer#0;class#AbstractVehicle#0" />
-            <element signature="method#print#0;class#AbstractVehicle#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/AirplaneImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="576">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AirplaneImpl#0;class#AirplaneImpl#0" />
@@ -759,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/BusImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="312">
           <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -771,7 +688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/vehicles/models/TrainImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="360">
           <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -779,6 +696,222 @@
             <element signature="method#validatePassangerCapacity#0;class#TrainImpl#0" />
             <element signature="method#setCarts#0;class#TrainImpl#0" />
             <element signature="method#print#0;class#TrainImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/models/common/ModelsValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="109" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
+          <folding>
+            <element signature="method#validateFieldBoundries#0;class#ModelsValidator#0" />
+            <element signature="method#valideForNull#0;class#ModelsValidator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/AgencyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/CommandParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/contracts/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListJourneysCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#execute#0;class#ListJourneysCommand#0" />
+            <element signature="method#journeysToString#0;class#ListJourneysCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListTicketsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#execute#0;class#ListTicketsCommand#0" />
+            <element signature="method#ticketsToString#0;class#ListTicketsCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/listing/ListVehiclesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#execute#0;class#ListVehiclesCommand#0" />
+            <element signature="method#vehiclesToString#0;class#ListVehiclesCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/enums/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/CommandsConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="method#CommandsConstants#0;class#CommandsConstants#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/AgencyFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AgencyFactoryImpl#0;class#AgencyFactoryImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/contracts/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/core/factories/CommandFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTrainCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <element signature="method#CreateTrainCommand#0;class#CreateTrainCommand#0" />
+            <element signature="method#execute#0;class#CreateTrainCommand#0" />
+            <element signature="method#parseParameters#0;class#CreateTrainCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateBusCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateBusCommand#0;class#CreateBusCommand#0" />
+            <element signature="method#execute#0;class#CreateBusCommand#0" />
+            <element signature="method#parseParameters#0;class#CreateBusCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateAirplaneCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#execute#0;class#CreateAirplaneCommand#0" />
+            <element signature="method#parseParameters#0;class#CreateAirplaneCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateTicketCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateTicketCommand#0;class#CreateTicketCommand#0" />
+            <element signature="method#execute#0;class#CreateTicketCommand#0" />
+            <element signature="method#parseParameters#0;class#CreateTicketCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/CreateJourneyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateJourneyCommand#0;class#CreateJourneyCommand#0" />
+            <element signature="method#execute#0;class#CreateJourneyCommand#0" />
+            <element signature="method#parseParameters#0;class#CreateJourneyCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agency/src/com/telerikacademy/agency/commands/creation/AbstractCreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AbstractCreateCommand#0;class#AbstractCreateCommand#0" />
+            <element signature="method#validateInput#0;class#AbstractCreateCommand#0" />
           </folding>
         </state>
       </provider>

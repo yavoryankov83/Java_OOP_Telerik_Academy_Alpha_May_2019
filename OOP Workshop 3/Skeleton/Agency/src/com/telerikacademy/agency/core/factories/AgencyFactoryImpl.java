@@ -11,6 +11,7 @@ import com.telerikacademy.agency.models.vehicles.models.BusImpl;
 import com.telerikacademy.agency.models.vehicles.models.TrainImpl;
 
 public class AgencyFactoryImpl implements AgencyFactory {
+
   public AgencyFactoryImpl() {
   }
 

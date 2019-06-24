@@ -4,6 +4,7 @@ import com.telerikacademy.agency.models.contracts.*;
 import com.telerikacademy.agency.models.vehicles.contracts.*;
 
 public interface AgencyFactory {
+
   Bus createBus(int passengerCapacity, double pricePerKilometer);
 
   Train createTrain(int passengerCapacity, double pricePerKilometer, int carts);

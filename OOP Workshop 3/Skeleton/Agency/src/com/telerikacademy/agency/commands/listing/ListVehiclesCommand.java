@@ -34,7 +34,7 @@ public class ListVehiclesCommand implements Command {
   private List<String> vehiclesToString() {
     List<String> stringifiedTickets = new ArrayList<>();
     for (Vehicle vehicle : vehicles) {
-      stringifiedTickets.add(vehicle.print());
+      stringifiedTickets.add(vehicle.toString());
     }
     return stringifiedTickets;
   }

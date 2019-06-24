@@ -18,6 +18,7 @@ public class ListTicketsCommand implements Command {
     this.agencyRepository = agencyRepository;
   }
 
+  @Override
   public String execute(List<String> parameters) {
     tickets = agencyRepository.getTickets();
 
@@ -33,7 +34,7 @@ public class ListTicketsCommand implements Command {
   private List<String> ticketsToString() {
     List<String> stringifiedTickets = new ArrayList<>();
     for (Ticket ticket : tickets) {
-      stringifiedTickets.add(ticket.print());
+      stringifiedTickets.add(ticket.toString());
     }
     return stringifiedTickets;
   }
