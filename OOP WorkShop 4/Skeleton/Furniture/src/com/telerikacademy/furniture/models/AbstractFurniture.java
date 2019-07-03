@@ -22,9 +22,9 @@ public abstract class AbstractFurniture implements Furniture {
 
   AbstractFurniture(String model, MaterialType materialType, double price, double height) {
     setModel(model);
-    this.materialType = materialType;
     setPrice(price);
     setHeight(height);
+    this.materialType = materialType;
   }
 
   @Override
@@ -73,20 +73,21 @@ public abstract class AbstractFurniture implements Furniture {
   public String toString() {
     StringBuilder builder = new StringBuilder();
 
-    builder.append(furnitureDetails());
+    builder.append(String.format("Type: %s, Model: %s, Material: %s, Price: %.2f, Height: %.2f, %s",
+            getType(),
+            getModel(),
+            getMaterialType(),
+            getPrice(),
+            getHeight(),
+            getDetails()));
 
     return builder.toString();
   }
 
-  String furnitureDetails() {
-    StringBuilder builder = new StringBuilder();
+  //helper method
+  protected abstract String getDetails();
 
-    builder.append(String.format("Model: %s, Material: %s, Price: %.2f, Height: %.2f",
-            getModel(),
-            getMaterialType(),
-            getPrice(),
-            getHeight()));
-
-    return builder.toString();
+  private String getType() {
+    return this.getClass().getSimpleName().replace("Impl", "");
   }
 }

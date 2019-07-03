@@ -8,6 +8,9 @@ import com.telerikacademy.furniture.models.contracts.Table;
 import com.telerikacademy.furniture.models.enums.MaterialType;
 
 public class FurnitureFactoryImpl implements FurnitureFactory {
+
+  private static final String NOT_VALID_CHAIR_TYPE_EXCEPTION = "The type of chair is not valid.";
+
   @Override
   public Company createCompany(String name, String registrationNumber) {
     return new CompanyImpl(name, registrationNumber);
@@ -20,15 +23,15 @@ public class FurnitureFactoryImpl implements FurnitureFactory {
 
   @Override
   public Chair createChair(String type, String model, String material, double price, double height, int numberOfLegs) {
-    switch (type) {
-      case "Normal":
+    switch (type.toLowerCase()) {
+      case "normal":
         return new ChairImpl(model, getMaterialType(material), price, height, numberOfLegs);
-      case "Adjustable":
+      case "adjustable":
         return new AdjustableChairImpl(model, getMaterialType(material), price, height, numberOfLegs);
-      case "Convertible":
+      case "convertible":
         return new ConvertibleChairImpl(model, getMaterialType(material), price, height, numberOfLegs);
       default:
-        return null;
+        throw new IllegalArgumentException(NOT_VALID_CHAIR_TYPE_EXCEPTION);
     }
   }
 

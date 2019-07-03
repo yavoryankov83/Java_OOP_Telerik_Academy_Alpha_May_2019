@@ -48,19 +48,7 @@ public class TableImpl extends AbstractFurniture implements Table {
   }
 
   @Override
-  public String toString() {
-
-    StringBuilder builder = new StringBuilder();
-
-    builder.append(String.format("Type: %s, %s, %s",
-            this.getClass().getSimpleName().replace("Impl", ""),
-            furnitureDetails(),
-            tableDetails()));
-
-    return builder.toString();
-  }
-
-  private String tableDetails() {
+  protected String getDetails() {
     StringBuilder builder = new StringBuilder();
 
     builder.append(String.format("Length: %.2f, Width: %.2f, Area: %.4f",

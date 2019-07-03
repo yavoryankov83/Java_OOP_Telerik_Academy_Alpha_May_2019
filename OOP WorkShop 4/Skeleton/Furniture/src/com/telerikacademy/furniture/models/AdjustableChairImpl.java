@@ -14,16 +14,4 @@ public class AdjustableChairImpl extends ChairImpl implements AdjustableChair {
   public void setHeight(double height) {
     super.setHeight(height);
   }
-
-  @Override
-  public String toString() {
-    StringBuilder builder = new StringBuilder();
-
-    builder.append(String.format("Type: %s, %s, %s",
-            this.getClass().getSimpleName().replace("Impl", ""),
-            furnitureDetails(),
-            chairDetails()));
-
-    return builder.toString();
-  }
 }

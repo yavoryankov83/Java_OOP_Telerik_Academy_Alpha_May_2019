@@ -27,22 +27,10 @@ public class ChairImpl extends AbstractFurniture implements Chair {
   }
 
   @Override
-  public String toString() {
+  protected String getDetails() {
     StringBuilder builder = new StringBuilder();
 
-    builder.append(String.format("Type: %s, %s, %s",
-            this.getClass().getSimpleName().replace("Impl", ""),
-            furnitureDetails(),
-            chairDetails()));
-
-    return builder.toString();
-  }
-
-  String chairDetails() {
-    StringBuilder builder = new StringBuilder();
-
-    builder.append(String.format("Legs: %d",
-            getNumberOfLegs()));
+    builder.append(String.format("Legs: %d", getNumberOfLegs()));
 
     return builder.toString();
   }

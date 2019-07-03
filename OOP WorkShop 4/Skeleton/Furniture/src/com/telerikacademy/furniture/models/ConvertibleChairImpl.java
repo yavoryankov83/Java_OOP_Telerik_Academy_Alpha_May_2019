@@ -5,44 +5,36 @@ import com.telerikacademy.furniture.models.enums.MaterialType;
 
 public class ConvertibleChairImpl extends ChairImpl implements ConvertibleChair {
 
-  private static final double CONVERTABLE_CHAIR_VALUE_AFTER_CONVERT = 0.1;
-  private boolean converted;
+  private static final double CONVERTABLE_CHAIR_HEIGHT_CHAIR_VALUE = 0.1;
+  private boolean isConverted;
+  private double initialHeight;
 
   public ConvertibleChairImpl(String model, MaterialType materialType, double price,
                               double height, int numberOfLegs) {
     super(model, materialType, price, height, numberOfLegs);
-    converted = false;
-  }
-
-  @Override
-  public double getHeight() {
-    if (converted) {
-      return CONVERTABLE_CHAIR_VALUE_AFTER_CONVERT;
-    }
-
-    return super.getHeight();
+    isConverted = false;
+    initialHeight = height;
   }
 
   @Override
   public boolean getConverted() {
-    return converted;
+    return isConverted;
   }
 
   @Override
   public void convert() {
-    converted = !converted;
+    isConverted = !isConverted;
+    if (isConverted) {
+      setHeight(CONVERTABLE_CHAIR_HEIGHT_CHAIR_VALUE);
+    } else {
+      setHeight(initialHeight);
+    }
   }
 
   @Override
-  public String toString() {
-    StringBuilder builder = new StringBuilder();
-
-    builder.append(String.format("Type: %s, %s, %s, State: %s",
-            this.getClass().getSimpleName().replace("Impl", ""),
-            furnitureDetails(),
-            chairDetails(),
-            getConverted() ? "Converted" : "Normal"));
-
-    return builder.toString();
+  protected String getDetails() {
+    return String.format("Legs: %d, State: %s",
+            getNumberOfLegs(),
+            getConverted() ? "Converted" : "Normal");
   }
 }

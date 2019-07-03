@@ -5,6 +5,7 @@ import com.telerikacademy.furniture.models.contracts.Company;
 import com.telerikacademy.furniture.models.contracts.Furniture;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class CompanyImpl implements Company {
@@ -28,6 +29,7 @@ public class CompanyImpl implements Company {
     furnitures = new ArrayList<>();
   }
 
+  @Override
   public String getName() {
     return name;
   }
@@ -40,6 +42,7 @@ public class CompanyImpl implements Company {
     this.name = name;
   }
 
+  @Override
   public String getRegistrationNumber() {
     return registrationNumber;
   }
@@ -52,41 +55,20 @@ public class CompanyImpl implements Company {
     this.registrationNumber = registrationNumber;
   }
 
+  @Override
   public List<Furniture> getFurnitures() {
     return new ArrayList<>(furnitures);
   }
 
+  @Override
   public void add(Furniture furniture) {
     Validator.validateForNull(furniture, FURNITURE_NULL_EXCEPTION);
 
     furnitures.add(furniture);
   }
 
-  public String catalog() {
-    StringBuilder builder = new StringBuilder();
-
-    builder.append(String.format("%s - %s - %s %s%n",
-            name,
-            registrationNumber,
-            furnitures.isEmpty() ? "no" : String.format("%d", furnitures.size()),
-            furnitures.size() == 1 ? "furniture" : "furnitures"));
-
-    furnitures.sort((x1, x2) -> {
-      int compareResult = (int) (x1.getPrice() - x2.getPrice());
-      if (compareResult == 0) {
-        compareResult = x1.getModel().compareTo(x2.getModel());
-      }
-      return compareResult;
-    });
-
-
-    for (Furniture furniture : furnitures) {
-      builder.append(furniture.toString())
-              .append(System.lineSeparator());
-    }
-
-
-    return builder.toString().trim();
+  public void remove(Furniture furniture) {
+    furnitures.remove(furniture);
   }
 
   public Furniture find(String model) {
@@ -98,12 +80,21 @@ public class CompanyImpl implements Company {
             .orElse(null);
   }
 
-  public void remove(Furniture furniture) {
+  public String catalog() {
+    StringBuilder builder = new StringBuilder();
 
-    int index = furnitures.indexOf(furniture);
+    builder.append(String.format("%s - %s - %s %s%n",
+            name,
+            registrationNumber,
+            furnitures.isEmpty() ? "no" : String.format("%d", furnitures.size()),
+            furnitures.size() == 1 ? "furniture" : "furnitures"));
 
-    if (index != -1) {
-      furnitures.remove(index);
+    furnitures.sort(Comparator.comparing(Furniture::getPrice).thenComparing(Furniture::getModel));
+
+    for (Furniture furniture : furnitures) {
+      builder.append(String.format("%s%n", furniture.toString()));
     }
+
+    return builder.toString().trim();
   }
 }
